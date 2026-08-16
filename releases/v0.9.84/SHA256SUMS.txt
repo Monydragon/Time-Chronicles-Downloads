@@ -1,0 +1,6 @@
+875e9a52f5e7563cd98b42498d255a2b5d5385cadc57e5a42155c497217cd86f  ./Time Chronicles-0.9.84-1.x86_64.rpm
+c4db8297069bc89cb412965943905fdd8479eeaa9b1674916857c34b5c52f91a  ./Time Chronicles_0.9.84_amd64.AppImage
+b94ec2c10cf38e0f99a7a453d0b2f800ce6fc2ba25f239f50b987de93f031672  ./Time Chronicles_0.9.84_amd64.deb
+a23e234fe64ed7811c9c1f92414a61b2c8eee03b1dfee14e816b71bddfcd7aac  ./Time Chronicles_0.9.84_universal.dmg
+daa30f3dd3c19654b87820542f97a9d4613f4540006733225099fc19e894263d  ./Time Chronicles_0.9.84_x64-setup.exe
+1545150a37b805e7af083a41348fde9ed18cc3dff41aa2f4445e7486a1e31438  ./desktop-releases.json
