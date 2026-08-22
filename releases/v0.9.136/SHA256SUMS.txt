@@ -1,0 +1,10 @@
+f49fd6c6e43142d291d93208722c3eaed277bbca04e1bc9b0833ba4e42d2ef5f  ./Time Chronicles-0.9.136-1.x86_64.rpm
+ba0916c0edb40091f85ca6af4de2a463fb567790c96a602e952dda464c4bd58b  ./Time Chronicles.app.tar.gz
+3ce7a14698555e1954996bc7b60ea3ed7d0ddb97f31d72bbd1c131298f70602d  ./Time Chronicles.app.tar.gz.sig
+5136bf086016569040b9ea6af234cb75959d5764cc49908cbd0775fbc0aa01b0  ./Time Chronicles_0.9.136_amd64.AppImage
+411a0757a68900643b09e7b0baa4b9223357098ccbeb421ab458605e88ad8cbd  ./Time Chronicles_0.9.136_amd64.AppImage.sig
+75a3f60fab275ea108a696e5c026b7719d7fec4cf14a7bb88973c2cca99f498b  ./Time Chronicles_0.9.136_amd64.deb
+44eadcfde694d80540f5f4a5dabae6db37c6baf3c9e75489eb42ddd299439e06  ./Time Chronicles_0.9.136_universal.dmg
+7ff30863907b10c67f3770c1f86f2ff0268cf1d31e448a19e8b56d5e80d8052d  ./Time Chronicles_0.9.136_x64-setup.exe
+e1a3649169b8c2cd591bf380b0fe4a7fb57d9da5092eb06eb1e30f0363ae8bc8  ./Time Chronicles_0.9.136_x64-setup.exe.sig
+ce0f00ce2929d4fc41c911f3f95957af8527596bc8c29b4c43c1043def1bee69  ./desktop-releases.json
