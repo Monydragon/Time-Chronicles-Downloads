@@ -1,0 +1,1358 @@
+{
+  "currentVersion": "0.9.139",
+  "releases": [
+    {
+      "version": "0.9.139",
+      "date": "2026-08-22",
+      "title": "Difficulty that travels with the table",
+      "summary": "Five difficulty levels now shape every game, Quick Play chapters can move easier or harder, and desktop updates open a complete installer catalog in the system browser.",
+      "details": [
+        "Casual, Easy, Normal, Hard, and Expert use explicit card mixes, Quick Play mistake allowances, and Chronicle placement accuracy across solo, AI, Local, Nearby, and Online play.",
+        "Casual misses and timeouts reveal and correctly insert the card with no points, heart, streak, draw, source-opening, or solo-ending penalty.",
+        "Every five-correct-card Quick Play chapter offers Easier, Keep level, and Harder choices while retaining total run statistics and resetting that chapter's mistake allowance.",
+        "Native update and download actions now open the operating system browser; no installer is embedded or run inside the game.",
+        "The in-app and public Downloads pages show Windows NSIS, universal macOS DMG, and Linux AppImage, DEB, and RPM installers with sizes, SHA-256 checksums, requirements, instructions, and release notes."
+      ]
+    },
+    {
+      "version": "0.9.138",
+      "date": "2026-08-22",
+      "title": "Three new eras and a better Deck Builder",
+      "summary": "Music, pandemic-scale outbreaks, and animal history join the catalog as unlockable 50-card packs, while duplicate events are replaced and deck building becomes a searchable customization workspace.",
+      "details": [
+        "Music of the Ages, Viral Outbreaks, and Animals through the Ages each add 50 sourced timeline events and can be unlocked with earned points.",
+        "The full 1,050-card collection now uses unique event titles and source-year combinations, replacing duplicate or effectively repeated events across packs without breaking saved deck identifiers.",
+        "Deck Builder brings owned and locked packs into one searchable workspace with scope filters, sorting, unlock readiness, previews, and one-click custom copies of owned packs.",
+        "Authorized staff can securely give, remove, or reset player points and grant or revoke packs as staff awards or promotions, with MFA, CSRF protection, idempotency, and audit logging."
+      ]
+    },
+    {
+      "version": "0.9.137",
+      "date": "2026-08-22",
+      "title": "A table that fits your screen",
+      "summary": "Responsive desktop, tablet, and mobile room browsing stays inside its panel, the floating Customize dock gains a fuller mixer and role-based palettes, and every live board can flip between horizontal and vertical timelines.",
+      "details": [
+        "Room search and filters now reflow on desktop, tablet, and mobile without clipping the last control beyond the panel edge.",
+        "The floating Audio panel adds a master output slider while keeping independent music and sound-effects controls, previews, and track selection.",
+        "Color palettes now expose primary, secondary, highlight, success, and danger roles with device-local custom colors.",
+        "A small board control switches local and online timelines between horizontal and vertical layouts during a game; the choice remains local to each player."
+      ]
+    },
+    {
+      "version": "0.9.136",
+      "date": "2026-08-21",
+      "title": "Desktop downloads, updates, and latest-only installer storage",
+      "summary": "Desktop builds ship native signed updates alongside the latest platform installers; older installers are retired on every publication to keep storage minimal.",
+      "details": [
+        "The desktop app Download button now checks for signed native updates instead of showing the web installer catalog.",
+        "Every release publishes the latest Windows, macOS, and Linux installers; the previous version's installers and updater manifests are retired, so the public download catalog always holds exactly one release.",
+        "The native updater prompt guides players through downloading, installing, and restarting the signed desktop update inside the app.",
+        "Web app visitors continue to see the full download catalog with platform-specific installers, SHA-256 checksums, and the PWA fallback."
+      ]
+    },
+    {
+      "version": "0.9.135",
+      "date": "2026-08-20",
+      "title": "Results stay until you close them",
+      "summary": "Placement and final results stay on screen until the player clicks to close them, instead of auto-dismissing while a multiplayer table waits for the next input.",
+      "details": [
+        "Play announcements no longer vanish after six seconds. Close or inspect them when you are ready.",
+        "Refreshing a room no longer clears an open placement result, and a finished table keeps its results overlay even if someone else returns the room to the lobby.",
+        "Timed-out turns open a result you can read, and the winner screen has an explicit Close results control plus a Show results button to bring it back."
+      ]
+    },
+    {
+      "version": "0.9.134",
+      "date": "2026-08-20",
+      "title": "Game modes and first-run How to Play",
+      "summary": "Survival and Time Attack keep their own stakes instead of converting back to a Classic points race, and first-time or inactive players get a blocking tutorial How to Play button they can dismiss.",
+      "details": [
+        "Survival still ends on hearts, even with a turn clock, and Time Attack keeps racing the timer to the target score instead of ending a solo run on the first miss like Classic.",
+        "A first-time or inactive welcome sits on top of Home with a real How to Play button, a Not now dismiss, Escape, and a tap outside the card.",
+        "Local setup can add an optional turn clock to any mode, including Survival, without changing the selected win condition."
+      ]
+    },
+    {
+      "version": "0.9.133",
+      "date": "2026-08-20",
+      "title": "Multiplayer unstick and moderation close",
+      "summary": "Online rooms recover from stuck turns, and deleting a table from staff immediately tells seated players it was closed by moderation.",
+      "details": [
+        "Staff room delete and clear-all write a durable close record so other instances cannot resurrect the table, and seated players hear a calm close and leave with a moderation message.",
+        "A silent active seat is skipped after 90 seconds so classic, survival, time-attack, streak, and blitz games keep moving even when the host turn timer is off.",
+        "Refreshing mid-game returns players to the live table instead of trapping them on a reconnect lobby, and closed rooms clear the saved session instead of retrying forever."
+      ]
+    },
+    {
+      "version": "0.9.132",
+      "date": "2026-08-20",
+      "title": "Hosted PayPal donate",
+      "summary": "The Store and home footer now use the live PayPal Donate button so players can support Time Chronicles while paid unlocks wait on the seller transition.",
+      "details": [
+        "The Store donation panel posts to PayPal's hosted Donate checkout with button R6225SLR29F3G instead of a disabled server checkout.",
+        "The home footer includes a Donate button that opens the same PayPal hosted form.",
+        "Pack unlocks stay earn-first; hosted donations do not grant client-only entitlements."
+      ]
+    },
+    {
+      "version": "0.9.131",
+      "date": "2026-08-20",
+      "title": "Donation-only current unlocks",
+      "summary": "Before 1.0, the store hides unavailable subscription tiers and verified PayPal support donations can unlock the current catalog together with ad-free play.",
+      "details": [
+        "The public Store and Support screens hide unavailable monthly, yearly, lifetime, and Stripe pack purchase controls, and locked packs point at verified PayPal donations instead of an unable-to-purchase state.",
+        "A verified donation now records durable access to all current packs and the selected tier of temporary ad-free play, while the server still validates the PayPal amount, capture, webhook, and recovery code.",
+        "The temporary donation-only mode defaults on and can be switched off later with CHRONICLE_PAYPAL_DONATION_ONLY=0 when the seller account transition is complete."
+      ]
+    },
+    {
+      "version": "0.9.130",
+      "date": "2026-08-20",
+      "title": "PayPal unlock readiness",
+      "summary": "PayPal support checkout now gates server-verified donations, subscriptions, lifetime access, and pack purchases behind complete provider configuration.",
+      "details": [
+        "PayPal Orders and Subscriptions use server-created metadata, provider amount checks, capture verification, and durable recovery codes.",
+        "Signed PayPal webhooks update recurring subscription state and recover one-time purchases when a browser return is interrupted.",
+        "PayPal actions stay hidden until protected credentials, a webhook ID, and the explicit unlock flag are configured; Stripe remains a separate future provider."
+      ]
+    },
+    {
+      "version": "0.9.129",
+      "date": "2026-08-20",
+      "title": "Drop stale turn notifications",
+      "summary": "A gone turn notification endpoint is removed from the room immediately instead of being retried until it expires.",
+      "details": [
+        "Web Push 404 and 410 responses are treated as gone rather than a successful wake-up.",
+        "The room drops that subscription as soon as the next-player notification reports it gone."
+      ]
+    },
+    {
+      "version": "0.9.128",
+      "date": "2026-08-20",
+      "title": "Profile-bound game telemetry",
+      "summary": "Game summary telemetry now requires a player profile, while anonymous visits keep a tighter support-safe IP limit.",
+      "details": [
+        "Anonymous player.visit events remain allowed with a reduced per-IP rate limit.",
+        "game.summary events require a player-profile bearer and are capped per profile and IP per day."
+      ]
+    },
+    {
+      "version": "0.9.127",
+      "date": "2026-08-20",
+      "title": "Live settings fail-closed",
+      "summary": "A Mongo outage now keeps the last live room settings, or pauses room creation, instead of reopening the table.",
+      "details": [
+        "Failed staff live-config reads no longer reset economy and weekly poll costs to defaults.",
+        "Public live-ops returns the last good payload, or HTTP 503 with maintenance on when none exists."
+      ]
+    },
+    {
+      "version": "0.9.126",
+      "date": "2026-08-20",
+      "title": "Unexpected API errors as 500",
+      "summary": "Unexpected multiplayer and billing failures now return HTTP 500 instead of looking like a client request error.",
+      "details": [
+        "Known room, auth, and validation messages still return 400, 401, or 404.",
+        "Untagged internal failures no longer default to HTTP 400."
+      ]
+    },
+    {
+      "version": "0.9.125",
+      "date": "2026-08-20",
+      "title": "Public write rate limits",
+      "summary": "Profile, weekly poll, and push writes now share the same public rate and body limits as support requests.",
+      "details": [
+        "Production and local servers cap weekly poll POST bodies and rate-limit profile, poll, and push writes.",
+        "Repeated public writes return HTTP 429 with a Retry-After header."
+      ]
+    },
+    {
+      "version": "0.9.124",
+      "date": "2026-08-20",
+      "title": "Retry transient missing rooms",
+      "summary": "Room polls retry a brief Room not found miss so a cold multiplayer instance does not drop the table.",
+      "details": [
+        "Client restore, reconnect, and refresh paths retry missing rooms; expired rooms still fail immediately.",
+        "The server force-refreshes durable storage and reads the room key before answering 404."
+      ]
+    },
+    {
+      "version": "0.9.123",
+      "date": "2026-08-20",
+      "title": "Production storage fail-closed",
+      "summary": "Vercel now refuses silent in-memory rooms and profiles when durable storage is missing.",
+      "details": [
+        "Production requires blob storage for rooms, polls, and tickets, and MongoDB for player profiles.",
+        "Health reports rooms as unavailable instead of claiming a durable store when Vercel is misconfigured."
+      ]
+    },
+    {
+      "version": "0.9.122",
+      "date": "2026-08-20",
+      "title": "Weekly poll storage fail-closed",
+      "summary": "A room storage outage no longer overwrites the weekly community poll with an empty board.",
+      "details": [
+        "Failed weekly poll reads keep the last in-memory cycle or return unavailable.",
+        "Missing poll storage still seeds the first cycle; read failures never persist an empty cycle."
+      ]
+    },
+    {
+      "version": "0.9.121",
+      "date": "2026-08-20",
+      "title": "No charge for rejected pack ideas",
+      "summary": "Weekly pack requests now validate the idea first, so a duplicate or invalid title does not spend room points.",
+      "details": [
+        "Idea title, category, and duplicate checks run before points are spent.",
+        "Only an accepted weekly idea charges the player profile."
+      ]
+    },
+    {
+      "version": "0.9.120",
+      "date": "2026-08-20",
+      "title": "One vote per player profile",
+      "summary": "Weekly poll submissions and votes now follow a signed-in player profile instead of a browser-chosen participant name that could be changed to vote again.",
+      "details": [
+        "Submitting or voting on the weekly poll requires a player profile, and limits are keyed to that profile.",
+        "Anonymous browser participant ids remain only for unsigned-in poll viewing."
+      ]
+    },
+    {
+      "version": "0.9.119",
+      "date": "2026-08-20",
+      "title": "Proven push subscriptions",
+      "summary": "Turn notifications now require a seat token and only accept public Web Push hosts, so a public player id cannot attach a hostile endpoint.",
+      "details": [
+        "Push subscribe requires the room reconnect token and binds the device to that seated player.",
+        "Subscription endpoints must be HTTPS Web Push hosts; private, local, and metadata addresses are rejected."
+      ]
+    },
+    {
+      "version": "0.9.118",
+      "date": "2026-08-20",
+      "title": "Safer online room updates",
+      "summary": "Online rooms now keep concurrent joins, host changes, and moves instead of letting one serverless write erase another.",
+      "details": [
+        "Each room stores a write revision and durable updates use compare-and-swap, so overlapping joins and host transfers retry instead of dropping a player.",
+        "A stale instance can no longer overwrite a newer room snapshot during a poll or persist."
+      ]
+    },
+    {
+      "version": "0.9.117",
+      "date": "2026-08-20",
+      "title": "A wider table and verified PayPal unlocks",
+      "summary": "Desktop multiplayer now uses the available width, while PayPal can mirror the catalog with server-verified donations, packs, lifetime access, and subscriptions.",
+      "details": [
+        "Reworked the desktop multiplayer entry screen into a readable intro and room-control composition that collapses to one column on compact screens.",
+        "Added PayPal Orders and Subscriptions checkout with server-calculated sale pricing, protected credentials, capture verification, durable recovery codes, and webhook lifecycle handling.",
+        "PayPal catalog unlocks now mirror the same product benefits, compare-at prices, promotions, and future-pack choices as the server catalog; client-only donation claims are no longer trusted.",
+        "Release automation now publishes the latest signed Windows, Linux, and macOS installers while pruning older public installers and updater manifests."
+      ]
+    },
+    {
+      "version": "0.9.116",
+      "date": "2026-08-20",
+      "title": "Support tickets and a stronger table handoff",
+      "summary": "Players can follow support tickets in-app while staff can assign, resolve, reply to, soft-delete, and restore them; saved rooms and host handoffs are clearer too.",
+      "details": [
+        "Replaced the Support Inbox with a permission-scoped Support tickets workflow for status, priority, assignment, private notes, staff replies, acknowledgement requests, close/reopen, soft-delete, restore, and audit history.",
+        "Players now keep the original request in a ticket conversation, receive in-app follow-up notices, and can acknowledge or send requested details after reconnecting.",
+        "Added a dedicated Social staff role and permission-scoped social content calendar with drafts, review states, schedules, links, and audited changes.",
+        "Staff invitations now make the username optional by deriving a sensible starting name from the invite email.",
+        "The saved-room popup now lets a non-host leave or a host disband the room instead of forcing an unnecessary reconnect.",
+        "When a host leaves or is removed, the room selects the next eligible player and tells that player they are now the host."
+      ]
+    },
+    {
+      "version": "0.9.115",
+      "date": "2026-08-19",
+      "title": "A clearer mobile home",
+      "summary": "Mobile home navigation now uses the first screen more efficiently, keeping the main play choices visible through Store.",
+      "details": [
+        "Removed the extra top spacing from the mobile home layout.",
+        "Tightened mobile menu rhythm and button sizing so Quick Play through Store fit in the first viewport without hiding the first-player prompt."
+      ]
+    },
+    {
+      "version": "0.9.114",
+      "date": "2026-08-19",
+      "title": "Clearer support and updates",
+      "summary": "Pricing can now be managed from staff controls, returning players get a clear menu action, and update notifications respect player activity.",
+      "details": [
+        "Monthly support starts at $4.99, annual support is $47.90, and each future pack is $0.99; live promotions show sale pricing, compare-at prices, copy, and end dates.",
+        "PayPal support is clearly described as helping the developer and providing an ad-free thank-you without unlocking card packs.",
+        "The saved Chronicle Run prompt now uses a button-style Return to menu action, and New to the Timeline appears before Quick Play for a clearer first decision.",
+        "Staff can turn live notifications on or off and choose whether startup release notes target first-time or inactive players, all players, or nobody."
+      ]
+    },
+    {
+      "version": "0.9.113",
+      "date": "2026-08-19",
+      "title": "Tap or drag",
+      "summary": "The tutorial now labels both gestures beside the pointer and lets every player tap, click, or drag the sample card.",
+      "details": [
+        "The pointer cue now says Tap/Drag right beside the hand or cursor, making the available actions clear at a glance.",
+        "Tap or click still selects the sample card and the glowing gap completes the move.",
+        "A pointer drag is now available on touch and desktop devices, so the sample card can be picked up and carried into the gap directly."
+      ]
+    },
+    {
+      "version": "0.9.112",
+      "date": "2026-08-19",
+      "title": "Point, then place",
+      "summary": "The tutorial now points directly at the card to move and lets desktop players drag it through a real pointer gesture into the glowing gap.",
+      "details": [
+        "The hand cue now sits above the highlighted card and points down at the one card a new player should move.",
+        "Desktop drag is a real pointer drag: the card follows the pointer, the destination gap highlights on contact, and a check mark confirms the placement.",
+        "Tap and click placement keep the same friendly check-mark result, so every input path teaches the same move."
+      ]
+    },
+    {
+      "version": "0.9.111",
+      "date": "2026-08-19",
+      "title": "See the move",
+      "summary": "How to play now looks like a real timeline with three cards, one clear card to move, and a gentle path to its glowing gap.",
+      "details": [
+        "The tutorial board starts with three dated cards already in order, so new players can see what a timeline looks like before making a move.",
+        "One child-friendly card is highlighted as the card to move, while the destination gap glows and a soft animated pointer shows the path.",
+        "Touch players see a tap cue; desktop players see a drag cue. Both interactions can be practiced directly in the tutorial."
+      ]
+    },
+    {
+      "version": "0.9.110",
+      "date": "2026-08-19",
+      "title": "A clearer way in",
+      "summary": "Home navigation now groups multiplayer, Deck Builder, Store, and Stats together, while How to play becomes a short interactive drag-or-tap lesson.",
+      "details": [
+        "The main menu keeps Multiplayer followed by Deck Builder, Stats, and Store, so the tools for building and exploring a table stay together.",
+        "The extra home menu is now labeled More ways to play, help & settings and keeps advanced play, settings, updates, support, and How to play in one clear group.",
+        "How to play is a single interactive card-and-gap screen: desktop shows a cursor and click-drag instruction, while mobile shows a tap cue and tap-the-card-then-gap instruction.",
+        "The tutorial demo accepts the same click, drag, or tap gesture it explains before the player starts a real game."
+      ]
+    },
+    {
+      "version": "0.9.109",
+      "date": "2026-08-19",
+      "title": "Name your table",
+      "summary": "Returning players now see the readable room name first, including for invite-only tables, instead of having to recognize an invite code.",
+      "details": [
+        "The saved-room prompt identifies the table by its room name and keeps the invite code as a small confirmation detail.",
+        "Existing saved sessions from earlier releases resolve their room name on return, so invite-only games become understandable without changing how players reconnect.",
+        "New and refreshed multiplayer sessions save the room name locally for an immediate, readable prompt on the next app launch."
+      ]
+    },
+    {
+      "version": "0.9.108",
+      "date": "2026-08-19",
+      "title": "Back to the table",
+      "summary": "The classic timeline and playable board return as the defaults, while timeline direction and board presentation remain configurable in Settings.",
+      "details": [
+        "Classic play now starts with the familiar side-by-side scores, board, timeline, and hand instead of a compressed or displaced game surface.",
+        "Choose a horizontal or vertical timeline and a classic or focused play area in Settings; choices stay saved locally without changing the game rules.",
+        "Correct and missed cards keep their turn-by-turn result messages, revealed card details, and clear next action in Solo, Local, and multiplayer play.",
+        "Timeline navigation stays available for longer stories without crowding the opening moves, and placement feedback remains actionable without covering the board.",
+        "Responsive sizing keeps the timeline, hand, result actions, and controls reachable on desktop, tablet, and phone layouts."
+      ]
+    },
+    {
+      "version": "0.9.107",
+      "date": "2026-08-19",
+      "title": "Your timeline, your direction",
+      "summary": "Horizontal scrolling returns as the default, with a vertical option, faster long-timeline navigation, and clearer placement reviews.",
+      "details": [
+        "Choose a horizontal or vertical timeline in Settings or Customize. The preference stays on this device and works in local and multiplayer games.",
+        "Jump to the start, latest card, or any exact card position on a long timeline. Selecting a placement notification highlights the card you want to find.",
+        "Correct placements jump to their card; missed and timed-out cards open the revealed card details so every turn remains useful.",
+        "The first-play preview now shows a card moving into place, while Quick Play remains the clear skip-to-game path beside the optional tutorial.",
+        "Reduced-motion settings replace the placement animation with a still explanation."
+      ]
+    },
+    {
+      "version": "0.9.106",
+      "date": "2026-08-19",
+      "title": "A faster first play and a deeper chronicle",
+      "summary": "Quick Play now starts the game immediately, with a readable solo board, clearer placement feedback, and a persistent five-chapter Chronicle Run.",
+      "details": [
+        "Quick Play is the first action: no setup form, release modal, tutorial tour, music prompt, or optional network request blocks the first card.",
+        "The first move is taught inside the timeline with an accessible animated guide, while advanced modes, collections, settings, and the full tutorial remain available from More.",
+        "Solo play uses a full-width vertical timeline, compact Chronicle Run progress, inline placement results, and a final review that keeps the actual timeline and last move visible.",
+        "Chronicle Run chapters carry mistakes and optional risk modifiers forward, save the best progress locally, and increase the difficulty mix without erasing progress after a failed run.",
+        "Quick Play mixes science, culture, games, music, film, sports, food, weather, and other everyday moments, with sourced cards and stronger default readability."
+      ]
+    },
+    {
+      "version": "0.9.105",
+      "date": "2026-08-18",
+      "title": "Multiplayer identity, turn integrity, and live status fixes",
+      "summary": "Online rooms no longer duplicate a player when the same device re-enters, turns can no longer skip or roll back across serverless instances, and the board now shows every player's connection state with the active player's remaining time.",
+      "details": [
+        "Device-based seats: each browser gets a stable device id, and re-joining a room (or recovering after a lost session) reclaims that device's original seat instead of adding a duplicate player — same seat, same hand, fresh reconnect token.",
+        "Turn integrity: polls now re-read the newest durable room state before acting, so a recycled serverless instance can no longer resolve a turn it had already advanced (skipping players) or write an older snapshot back that rolls the board to a previous turn.",
+        "The client ignores stale poll snapshots entirely, so a momentary cross-instance lag can never roll the timeline backward on screen.",
+        "The scoreboard marks each player online or away next to their name and shows the active player's countdown (e.g. \"online · 12s left\"), so a dropped or lagging connection is visible instead of silently stalling the table."
+      ]
+    },
+    {
+      "version": "0.9.104",
+      "date": "2026-08-18",
+      "title": "Store sales engine, cleaner ads, and clearer lobby messaging",
+      "summary": "The store can now run time-boxed sales with percent-off or fixed prices and bonus incentives, the ad slot cleans up stray Google iframes when it unmounts, and the Online lobby explains why an empty room list can be misleading.",
+      "details": [
+        "A shared billing sales model validates staff-configured sales (percent-off or fixed price, active window, bonus days or bonus points) and exposes discounted price helpers with compare-at pricing.",
+        "Staff global settings and the public live-ops payload now carry the billing configuration and an optional active sale for the store.",
+        "Unmounting an ad slot removes leftover Google ad iframes that could linger on screen after navigating away.",
+        "The Online lobby's empty state now notes that a table only shows while someone is actually waiting in it, so players are not confused by a quiet room list."
+      ]
+    },
+    {
+      "version": "0.9.103",
+      "date": "2026-08-18",
+      "title": "Lobby, dock, and ad hit-target fixes",
+      "summary": "The Online lobby badge no longer crowds the room title, the floating customize and mute controls stop blocking the screen, and the bottom ad is clickable again.",
+      "details": [
+        "The \"Room waiting\" badge is spaced off the room title so the two never overlap.",
+        "The floating dock (customize and mute) now ignores clicks on its empty strip area, so it no longer sits in the way of the content behind it.",
+        "The ad's label and frame no longer swallow clicks: GO AD-FREE, the ad itself, and its close button all respond again."
+      ]
+    },
+    {
+      "version": "0.9.101",
+      "date": "2026-08-18",
+      "title": "Online lobby hotfix",
+      "summary": "The public Online lobby no longer comes up empty on the serverless deployment: rooms created on one instance now appear in the lobby on every instance, so players can find and join each other again. Joining by room code continues to work across instances.",
+      "details": [
+        "Rooms are no longer marked fully disconnected when a fresh serverless instance reloads them from durable storage; a player who polled recently still counts as present.",
+        "The public lobby now lists waiting rooms hosted on any serverless instance, instead of hiding every room the local instance had not seen yet.",
+        "Joining by invite code resolves rooms across instances exactly as before, and ghost rooms whose owners stopped polling are still swept."
+      ]
+    },
+    {
+      "version": "0.9.100",
+      "date": "2026-08-18",
+      "title": "Online room creation hotfix",
+      "summary": "Creating or joining an online room no longer crashes when the serverless request has no socket. Vercel forwarded headers are used instead, so hosting works again on mobile and desktop.",
+      "details": [
+        "Room create, join, and reconnect no longer throw when request.socket is null on Vercel.",
+        "Client IP and location still come from x-forwarded-for and Vercel geo headers for moderation and analytics."
+      ]
+    },
+    {
+      "version": "0.9.99",
+      "date": "2026-08-18",
+      "title": "Fairer prices, quieter ads, and staff live ops",
+      "summary": "Empty AdSense panels stay hidden until a real ad fills. The store now uses a $4.99 monthly, $39.99 yearly, and $19.99 lifetime ladder, with PayPal as an ad-free thank-you rather than a pack unlock. Reward cadence is staff-owned, double-points events pop up when they go live, and a new Polls tool records player answers.",
+      "details": [
+        "AdSense chrome collapses unless a filled ad is present, so loading and unfilled states no longer leave a cream gap; the Monydragon sponsor still appears as the fallback.",
+        "Store prices realign around $4.99/month, a new $39.99/year plan, $19.99 lifetime, and $0.99 future packs. PayPal thank-you tiers match that monthly rung and grant ad-free time only.",
+        "Players no longer pick a reward cadence. Staff set cards-per-point (default 1 point every 10 cards) and can schedule point-multiplier events that pop up when they activate.",
+        "A new staff Polls & questions tool lets the team compose surveys, collect one response per player, and mark results Reviewed, Acted on, or Closed."
+      ]
+    },
+    {
+      "version": "0.9.98",
+      "date": "2026-08-18",
+      "title": "Deck Builder, feedback, and a fuller history",
+      "summary": "The Deck Builder becomes the paid creative suite: players browse and manage decks free, while making new custom cards or decks unlocks through the $2.99/month subscription, the $9.99 lifetime unlock, or earned points. Support now accepts problem reports and feature suggestions in-app, Customize warns when colors become hard to read, room cleanup is fixed, and the changelog restores the complete pre-0.9.58 history in expandable sections.",
+      "details": [
+        "The home menu no longer advertises Projects; the Deck Builder is the creative home. Managing existing custom decks and building a collection from unlocked cards stays free, while creating a brand-new deck or card requires the subscription, the lifetime unlock, or enough earned points.",
+        "A clear paywall explains the three unlock paths ($2.99/month, $9.99 once, or points) directly in the Deck Builder instead of sending players to a hidden studio.",
+        "Community feedback now offers Report a problem and Suggest a feature beside the existing card-correction flow, so every report lands in the staff inbox and routes to support@monydragon.com.",
+        "Customize warns in real time when custom text, background, or accent colors fall below readable contrast in light, dark, or system mode, so ambiguous combinations never go unnoticed.",
+        "The changelog is now expandable per release — only the latest version opens automatically, and every earlier version collapses into its own section — with the full release history before 0.9.58 restored.",
+        "Automatic room pruning now removes ghost, empty, and expired rooms during every durable-store refresh, and staff can clear every room with one confirmed action."
+      ]
+    },
+    {
+      "version": "0.9.97",
+      "date": "2026-08-18",
+      "title": "Signed desktop updates and live table tools",
+      "summary": "Installed Windows, Linux, and macOS apps can now check for a signed update, confirm, install, and relaunch. Stats is split into Achievements, Offline, and Online. Home and Store show a live weekly countdown, staff can price packs and votes, rooms put the table name first, and anyone at the table can suggest or offer owned packs. Staff gains a Moderation console with IP, location, and identity tools plus a player-matching Customize dock.",
+      "details": [
+        "Desktop builds check the signed updater feed, show a confirmation prompt, and can install then relaunch. Manual downloads remain available if an update is skipped.",
+        "Stats now uses three page tabs: Achievements, Stats (Offline) combining Solo and Local, and Stats (Online).",
+        "Home and Store show a live countdown to weekly poll close and the next pack release, including staff-configured request and vote point costs.",
+        "Online profiles bootstrap on first use, migrate local progress once, and treat the server wallet and entitlements as authoritative while connected.",
+        "Lobby packs are room-only: anyone can suggest, and a pack is in the game only while at least one seated owner offers it. Room name is the in-play heading, with the code as secondary metadata.",
+        "Staff Moderation shows IP, coarse location, and name fallbacks, hosts allow/deny lists and kick/delete controls, Pack studio can grant a pack, and Customize matches the player Theme/Settings dock."
+      ]
+    },
+    {
+      "version": "0.9.96",
+      "date": "2026-08-17",
+      "title": "Clear multiplayer paths and readable rooms everywhere",
+      "summary": "Multiplayer now starts with Host, Join by Room, or Join by Invite Code, public rooms can be searched, filtered, and sorted, and host setup stays bounded on every screen. Dark-mode staff dialogs and shared surfaces are readable, community-voted packs show their release date, and empty ad banners no longer leave a white gap.",
+      "details": [
+        "Multiplayer opens with three direct choices: Host, Join by Room, and Join by Invite Code. Hosting then offers Local, Nearby (Coming soon), and Online without sending players through unrelated screens.",
+        "The public Online lobby now supports search, deck, seat, and status filters plus recent-activity, open-seat, and name sorting. Room cards join directly, while Invite Code and Online Lobby actions stay one tap away.",
+        "Room timer and disconnect controls shrink and stack inside their settings cards instead of extending beyond the border at narrower desktop and tablet widths.",
+        "Staff forms, cards, previews, and the sensitive-action verification dialog use theme-aware surfaces and readable text in dark mode; shared accent panels now use dark-safe tones too.",
+        "Weekly community winners no longer carry a Community: name prefix. Deck details identify them as community-voted packs and show the actual release date.",
+        "Unfilled AdSense placements collapse instead of reserving an empty white strip, and first-party fallback banners match the active theme."
+      ]
+    },
+    {
+      "version": "0.9.95",
+      "date": "2026-08-17",
+      "title": "A friendlier multiplayer lobby and mobile inputs that work",
+      "summary": "The online lobby is now organized into tabs — Host, Join Room, and Join with code — with a guided host setup, so nobody scrolls a wall of host-only controls. Joining without a name asks first, numeric inputs edit properly on phones, and hung connections time out instead of freezing the table.",
+      "details": [
+        "The online lobby is split into three tabs: Host a room (a guided Table, Cards, Rules, Launch setup), Join room (browse public tables with search and filters), and Join with code (direct invite), so the action you want is always in reach on mobile and desktop.",
+        "Joining a room without a player name now pops a name prompt with the room code shown; the join stays disabled until a name is entered, then proceeds straight into the room.",
+        "Numeric pickers and custom amounts are editable on iOS: the number inputs use a numeric keypad text field instead of the iOS number input that could not be cleared or changed, and the Custom amount option can be re-selected after typing.",
+        "Online requests now time out after a hard ceiling, so a hung connection is reported and retried instead of leaving the room poll stuck on a stale turn.",
+        "The host setup, room list, and invite join all fit comfortably on phones and desktops with tabbed sections instead of one long scrolling form."
+      ]
+    },
+    {
+      "version": "0.9.94",
+      "date": "2026-08-17",
+      "title": "Unstick frozen turns and put Customize everywhere",
+      "summary": "A stuck online turn now recovers with one tap: the game screen gains a Refresh room control that pulls the authoritative server state, and a rejected placement automatically resyncs instead of freezing the table. The floating Customize button is now a first-class control on by default, opening a tabbed popup with Theme, Audio, and Settings from any screen — so switching the music is one tap away.",
+      "details": [
+        "The multiplayer game screen adds a Refresh room button that force-pulls the latest room snapshot, clears stuck busy/move flags and stale selections, and shows a Room synced confirmation under the turn status.",
+        "When the server rejects a placement because the turn, hand, or game already changed, the client now resyncs immediately so a ghost 'Your turn' can never block every player at the table.",
+        "The floating Customize button is on by default for everyone, including returning players whose saved preferences still carried the old off default — their other choices are preserved.",
+        "Customize now opens a popup with tabs at the top: Theme keeps the full appearance panel, Audio embeds the complete mixer with music, effects, volumes, and previews, and Settings holds the reading & access toggles plus a jump to the full Settings screen.",
+        "Music is easier than ever to update: mute, volumes, and the track picker live in the Audio tab of the floating dock on the home screen, in a game, or anywhere else in the app."
+      ]
+    },
+    {
+      "version": "0.9.93",
+      "date": "2026-08-17",
+      "title": "Rejoin your last room, and pushes that survive restarts",
+      "summary": "Opening the app after a close now asks whether you want to rejoin your last room — one tap reconnects instantly and drops you back onto the shared timeline. Turn pushes are stored with the room itself, so a closed or hibernated app still wakes when the turn reaches you, even after a server restart.",
+      "details": [
+        "A popup on app entry offers to rejoin your last room — one tap drops you straight back onto the shared timeline.",
+        "Turn pushes now survive server restarts: your device subscription is stored with the room, so a closed or hibernated app still wakes when it's your turn.",
+        "Closed-app push wake-ups land on the rejoin prompt, so returning from a notification goes straight to your room."
+      ]
+    },
+    {
+      "version": "0.9.92",
+      "date": "2026-08-17",
+      "title": "Cleaner end screens and a sturdier desktop bundle",
+      "summary": "The winner screen keeps every piece of text and every control on its own line with proper spacing, and the desktop app now boots from a single bundled script so the native shell cannot blank out while loading the game.",
+      "details": [
+        "The winner and result popups get explicit breathing room: the Play again button, the players list, the return note, and the Leave room link can no longer crowd or overlap one another on phones, tablets, or desktops.",
+        "Long winner names wrap instead of colliding with the scores, and narrow screens keep every end-screen row visible inside the viewport.",
+        "The desktop application now embeds the whole game in one static bundle — no dynamic chunks to resolve over Tauri's custom protocol — so the window paints the game instead of a blank white screen.",
+        "The installed app keeps its local decks, audio, settings, and offline play; the same bundle still powers the Swift and web builds."
+      ]
+    },
+    {
+      "version": "0.9.91",
+      "date": "2026-08-17",
+      "title": "A clearer clock and a tidier board",
+      "summary": "Time Attack shows a large, glanceable countdown with a configurable per-turn limit, timeline dates no longer clip off the edges of cards, the Settings & customize button sits flush on the home menu, and the Solo/Pass & play hint is gone.",
+      "details": [
+        "Time Attack now displays a prominent countdown above the board that pulses red in the final five seconds, in both local and online games.",
+        "The per-turn timer stays configurable from setup and room settings, and every mode was re-verified end to end across local and multiplayer tables.",
+        "Card dates wrap cleanly and the mobile timeline cards grow to fit longer full dates instead of clipping them at the bottom edge.",
+        "The Settings & customize button spans the full home utility row so its label and gear icon stay aligned on one line.",
+        "The home-screen \"Solo runs in Single Player · Pass & play in Multiplayer\" hint and its avatar icons have been removed."
+      ]
+    },
+    {
+      "version": "0.9.90",
+      "date": "2026-08-17",
+      "title": "Turns reach you even in the background",
+      "summary": "Online rooms now deliver a real Web Push notification when the shared turn reaches you, so a minimized or suspended phone still wakes with your turn and taps straight back onto the timeline.",
+      "details": [
+        "While a game is live, the app subscribes the device to background turn pushes and registers it against your online seat; leaving the room drops the registration.",
+        "The server sends a VAPID-signed wake-up to the newly active player on every turn advance, including moves, timeouts, away skips, and departures.",
+        "The installed service worker shows the turn notification even when the app is closed or backgrounded, and tapping it focuses the app and jumps back onto the shared timeline.",
+        "Push only activates when the player has already granted notification permission, and platforms without push support skip it silently."
+      ]
+    },
+    {
+      "version": "0.9.89",
+      "date": "2026-08-17",
+      "title": "Tap the alert and land back on the timeline",
+      "summary": "Tapping a turn or game-complete notification now brings the app forward, reopens the active table, and scrolls straight to the timeline so a player is one tap from their next move.",
+      "details": [
+        "The strong turn pulse still fires while the app is minimized or backgrounded, and tapping the notification now deep-links back into the live game instead of just refocusing the tab.",
+        "Local, solo, pass-and-play, and online rooms each restore their own board; a player who wandered back to Home is returned to the game in progress.",
+        "Returning players land on the shared timeline, scrolled into view on phones and desktops, so the next card is already in front of them."
+      ]
+    },
+    {
+      "version": "0.9.88",
+      "date": "2026-08-17",
+      "title": "See where each card lands",
+      "summary": "After a correct placement the result popup now offers “See where it landed”: it closes the popup, scrolls the board to the card's new spot, highlights it, and opens the card's full story and source.",
+      "details": [
+        "The result popup gains a See where it landed action on correct placements in local, pass-and-play, versus, and online rooms.",
+        "The board smooth-scrolls to the exact card, pulses a highlight around it, then opens the card's info panel with its full story and source.",
+        "Misses and timeouts keep the existing flow, since the card returns to the archive rather than joining the timeline."
+      ]
+    },
+    {
+      "version": "0.9.87",
+      "date": "2026-08-17",
+      "title": "Joining a room skips the host-only scroll",
+      "summary": "Room setup controls are now collapsible in the multiplayer lobby: expanded for the host and collapsed by default for guests, so a joiner reaches the player list and Ready button without scrolling past rules they cannot change.",
+      "details": [
+        "The host sees room setup expanded and can collapse it; guests get it collapsed with a one-line summary of the deck and mode.",
+        "The Ready button and player list now sit right after the room code when joining, instead of below a wall of host-only settings.",
+        "The toggle is keyboard-focusable and exposes aria-expanded/aria-controls for assistive tech."
+      ]
+    },
+    {
+      "version": "0.9.86",
+      "date": "2026-08-17",
+      "title": "Desktop apps open on the game, not a white window",
+      "summary": "The Windows desktop installer now opens the full embedded game instead of a blank white window. The native bundle's asset paths are locked to the relative form Tauri's shell requires, and CI rebuilds and verifies that bundle on each build runner before the installer is packaged.",
+      "details": [
+        "Fixed the white screen: native builds could lose the desktop build flag in CI and embed absolute /assets/ URLs, which Tauri's custom protocol serves from the wrong origin and leaves an empty window.",
+        "Desktop detection now also reads TAURI_ENV_PLATFORM, which tauri-cli always injects into the pre-build step, so the relative ./assets/ paths can no longer regress on CI runners.",
+        "Every build runner now rebuilds the desktop web bundle and runs the bundle verifier before tauri build, so a broken or incomplete payload fails fast instead of shipping a blank installer.",
+        "The full game remains embedded: all modes, decks, and cards are verified present in the bundled scripts before the native matrix starts."
+      ]
+    },
+    {
+      "version": "0.9.85",
+      "date": "2026-08-16",
+      "title": "Never miss your turn",
+      "summary": "The game now sticks by your side: a system notification and flashing tab reach you when a turn or game changes while the app is minimized or in another tab, and phones pulse strongly at the moment the table hands off to you.",
+      "details": [
+        "Turn alerts can fire a system notification and flash the tab title whenever your turn starts or a game finishes while the app is minimized, tabbed out, or backgrounded on a phone.",
+        "Local pass-and-play tables pulse the device the moment the handoff reaches the next player, Versus Chronicle buzzes on your human turns, and Online rooms alert you the instant the shared turn becomes yours.",
+        "A strong turn pulse (a deliberate double-pulse pattern) runs on phones without opening the app; where vibration is unsupported it is skipped silently.",
+        "Alerts and vibration only fire for the player whose turn it is — never during someone else's play, never during a solo run's automated rival, and never while you are looking at the table.",
+        "A new Alerts & attention section in Settings lets every player turn each behavior on or off independently and save it on this device, with honest permission and support status.",
+        "System notifications ask once through the browser's own permission prompt when the player enables turn alerts, and blocked or unsupported shells gracefully fall back to the flashing tab title."
+      ]
+    },
+    {
+      "version": "0.9.84",
+      "date": "2026-08-16",
+      "title": "Repackage and verify the desktop installers",
+      "summary": "A freshly rebuilt Windows, macOS, and Linux installer set ships with every desktop build now verified before release: the complete game bundle is checked for relative paths, embedded content, and healthy installer sizes.",
+      "details": [
+        "Windows, macOS, and Linux installers are rebuilt fresh for this release, and each native bundle now embeds the complete game — the bundled app, all 900 built-in cards, every screen, and all modes — instead of an empty shell.",
+        "Every desktop release build verifies the installer payload before shipping: the embedded web bundle is checked for relative asset paths (the cause of the blank white window), all referenced files, and the presence of expected game content.",
+        "Each platform installer is also checked against a minimum size floor before publication, so a broken build that packaged an empty app can no longer be published as a real installer.",
+        "The staff-only card-source audit artifact no longer ships inside the app or website; it stays out of every bundle while remaining available as a QA deliverable.",
+        "Desktop downloads continue to keep only the newest published installer per platform, retiring older versions when a newer release publishes.",
+        "The release feed and download page show the exact version, size, and SHA-256 checksum for the single current installer set, and the installable web app remains the lightweight fallback."
+      ]
+    },
+    {
+      "version": "0.9.83",
+      "date": "2026-08-16",
+      "title": "Ship one current desktop build",
+      "summary": "Desktop downloads keep only the newest published installer, and the current release ships a fresh native build that opens into the game instead of a white window.",
+      "details": [
+        "The desktop download catalog now stores only the latest published installer per platform; every older version is retired when a newer release publishes, so players always see one current build.",
+        "A freshly built Windows, macOS, and Linux desktop installer is published for this release, replacing the outdated build that could open into a blank white window.",
+        "Native desktop builds keep loading their bundled assets through relative paths, so the game screen, setup, and every local table render in color instead of a white window.",
+        "The desktop release feed and download page continue to show the exact version, size, and SHA-256 checksum for the single current installer set.",
+        "The installable web app remains the lightweight fallback and still updates in the browser between desktop releases."
+      ]
+    },
+    {
+      "version": "0.9.82",
+      "date": "2026-08-16",
+      "title": "Set the soundtrack",
+      "summary": "The generated music now plays across Home and every screen, fresh players start muted, and a one-time prompt lets new players choose their soundtrack.",
+      "details": [
+        "The original generated soundtrack plays on the Home screen and everywhere else, not just during a game, so the same selected loop follows the player through setup, browsing, and play.",
+        "New players start muted by default: nothing plays until they explicitly turn sound on, keeping first launches quiet and deliberate.",
+        "A first-run prompt asks new players whether they want music, offers to turn on the default loop, lets them jump straight to choosing a track in Settings, or keeps audio off.",
+        "The prompt appears once, after the quick tutorial and release notes, and never interrupts an active game; answering it remembers the choice on this device.",
+        "Returning players with saved audio preferences are never re-prompted and keep their existing volume, track, and mute choices.",
+        "The always-available Mute dock control and the full Settings mixer continue to work exactly as before."
+      ]
+    },
+    {
+      "version": "0.9.81",
+      "date": "2026-08-16",
+      "title": "Keep every mode honest",
+      "summary": "Survival stays heart-driven to the final card, Single Player and Multiplayer keep their own tables, and native desktop installers finally open in color instead of a blank window.",
+      "details": [
+        "Survival mode is decided by hearts alone: a dry archive recycles instead of silently turning into a points race, and the final screen crowns the player with the most hearts left — never the top scorer.",
+        "The same heart-driven endgame applies to Solo, Chronicle, Local, Nearby, and Online survival tables through the shared client and server engines.",
+        "Single Player setup now offers only Solo runs and the Chronicle challenge; Pass & play appears only in the Multiplayer section, and the home screen no longer advertises pass-and-play under the Single Player button.",
+        "Local multiplayer setup stays focused on Pass & play, so a one-device party table can never accidentally start a single-player run.",
+        "Desktop installers now load their bundled assets through relative paths, fixing the blank white window on Windows while the web build keeps its clean root-relative URLs.",
+        "Results copy is consistent: one-moment runs read '1 moment' instead of '1 moments', and a solo survivor who completes the whole archive sees 'You survived the archive'.",
+        "Mobile and desktop layouts keep every setup pill, scoreboard, and result inside the viewport bounds."
+      ]
+    },
+    {
+      "version": "0.9.80",
+      "date": "2026-08-16",
+      "title": "Take the chronicle beyond the browser",
+      "summary": "Native desktop builds, late-join defaults, and touch-aware drag controls make every table easier to enter and play.",
+      "details": [
+        "Time Chronicles now has a Tauri 2 desktop shell for Windows, macOS, and Linux while the installable web app remains available as the lightweight fallback.",
+        "The desktop chooser detects the player's operating system and offers Windows x64 NSIS, macOS universal DMG, or Linux x64 AppImage, Debian, and RPM packages when published.",
+        "Every installer entry includes its exact download size and SHA-256 checksum, and the release feed refuses duplicate, malformed, off-host, or mutable artifact paths.",
+        "A private multi-platform GitHub Actions build publishes only finished binaries and metadata to a dedicated public, binary-only GitHub Pages repository through a repository-scoped deploy key.",
+        "Unsigned preview builds remain free to distribute, with clear warnings that Windows SmartScreen and macOS Gatekeeper can require confirmation until paid signing and notarization are configured.",
+        "The native shell sends multiplayer, reports, billing, weekly polls, live operations, and release-note requests to the production service instead of an unusable bundled relative API path.",
+        "External web, email, telephone, checkout, support, and source links open through the operating system, while executable protocols and untrusted installer metadata are rejected.",
+        "The desktop runtime skips the browser service worker and third-party AdSense script, uses bundled static assets, and keeps the existing PWA as a safe offline-capable fallback.",
+        "Join games in progress is now enabled by default for new Online and Nearby rooms; a host's explicit off choice still persists, hides the active room, and rejects late joins.",
+        "Solo, Chronicle, Local, Nearby, and Online hands now use one guarded drag system for mouse, pen, and touch input.",
+        "On phones, horizontal movement remains a swipeable hand carousel while a deliberate vertical gesture captures the card and moves it toward a glowing timeline gap.",
+        "Drag cancellation, disabled turns, automated turns, open results, handoffs, busy requests, and duplicate pointer completions cannot place a card accidentally or twice.",
+        "The public installer feed remains unavailable until real platform builds pass and publish, so players never see a placeholder download represented as a finished app."
+      ]
+    },
+    {
+      "version": "0.9.79",
+      "date": "2026-08-16",
+      "title": "Keep every table in view",
+      "summary": "An always-visible release badge, host-controlled live-score privacy, explicit final reveals, and validated community controls keep every player oriented and every table deliberate.",
+      "details": [
+        "The running version stays visible on every screen, including active games and dialogs, while modal spacing keeps the passive badge clear of player actions on narrow devices.",
+        "Hosts can show or hide live scores in Local, Solo, Chronicle, Nearby, and Online setup; the setting defaults on for existing tables and preserves an explicit off choice.",
+        "Hidden-score tables mask player totals, hand progress, per-play points, lives, streaks, elimination state, winner identity, and point-bearing result copy until final results are deliberately opened.",
+        "The final placement dialog no longer reveals the completed score early. Players choose See final results before exact totals appear.",
+        "Online room polling and placement responses redact score-bearing fields at the server boundary, so browser network tools cannot bypass the host's privacy choice.",
+        "A seated player's reconnect token can request authenticated final results only after the game is finished; unfinished and invalid requests are rejected.",
+        "Online progression reconciles the player's exact final score once and persists that reconciliation across refreshes and reconnects.",
+        "Show-live-scores travels through room creation, host updates, reconnects, standalone server parsing, and Nearby invites without changing other rules.",
+        "Staff can enable or disable the Monydragon Services Discord destination and enter a validated invite URL as free text.",
+        "Discord validation accepts only a canonical HTTPS discord.gg invite code and rejects credentials, ports, lookalike hosts, nested or dot-segment paths, queries, fragments, backslashes, controls, and encoded separators.",
+        "Disabled community links are omitted from public live operations and stay hidden during cold loads or service outages instead of flashing a stale default.",
+        "Staff and host settings now expose honest unapplied states, Apply and Discard behavior, failure-safe drafts, and navigation or browser-exit guards.",
+        "Version, score-privacy, final-result, and community controls adapt to phones, safe areas, high contrast, large targets, keyboard focus, and screen readers."
+      ]
+    },
+    {
+      "version": "0.9.78",
+      "date": "2026-08-16",
+      "title": "Give history a soundtrack",
+      "summary": "Five original generated music loops, ten responsive sound cues, a complete preview mixer, and an always-available mute control bring every kind of table to life.",
+      "details": [
+        "Five deterministic procedural tracks — Quiet Archive, Clockwork Quiz, Lantern Library, Signal Room, and Starlit Timeline — are generated locally from original note recipes with no remote audio, licensing dependency, or tracking request.",
+        "Ten synthesized cues cover game start, card placement, correct answers, misses, turn changes, timer warnings, achievement unlocks, pack unlocks, room joins, and game completion.",
+        "Settings now includes independent master, music, and sound-effect controls, whole-number volume sliders, five explicit music previews, and all ten named effect previews.",
+        "Music selection and volume preferences stay on this device under their own safe, versioned audio setting and tolerate blocked or malformed browser storage.",
+        "A shared Mute / Unmute control stays easy to reach during play without becoming another independent floating bubble or covering ads, cards, dialogs, or phone safe areas.",
+        "Local, Solo, Chronicle, Nearby, and Online games share the same semantic audio path, including result, timer, progression, room, and final-score moments.",
+        "Online polling, placement retries, reconnects, joining in progress, stale responses, and play-again rounds are deduplicated so a sound never replays historical or repeated room activity.",
+        "Track previews stop after ten seconds, stop immediately when Settings closes or audio becomes unavailable, and restore the active game soundtrack when appropriate.",
+        "Browsers create and resume the audio graph only after a real pointer or keyboard gesture; hidden tabs fade, suspend, and resume only an already-unlocked session.",
+        "Track buffers, simultaneous effects, room cursors, and event keys are strictly bounded, while deterministic generation, crossfades, envelopes, peak limiting, and teardown protect mobile performance.",
+        "The mixer and shared dock support narrow phones, tablets, safe areas, high contrast, large targets, keyboard focus, live preview feedback, and screen-reader toggle semantics."
+      ]
+    },
+    {
+      "version": "0.9.77",
+      "date": "2026-08-16",
+      "title": "Pull up a chair",
+      "summary": "The Monydragon Services community now has a prominent, accessible Discord entry point for players who want to meet, share, and follow what comes next.",
+      "details": [
+        "A full-width community card on Home gives Discord a large, recognizable mark, clear invitation copy, and an easy-to-find Join on Discord action.",
+        "A compact footer link keeps the community discoverable after players move past the main card.",
+        "The canonical Monydragon Services invite is https://discord.gg/S6wDMdnJw and is centralized for reuse by future staff settings.",
+        "Every Discord link opens in a new tab with safe opener isolation and an explicit accessible name.",
+        "Player copy identifies Discord as an external service and makes clear that the independently operated Monydragon Services community is not affiliated with or endorsed by Discord.",
+        "Invite validation accepts only a bounded HTTPS discord.gg invite code and rejects lookalike hosts, credentials, ports, nested paths, query strings, fragments, backslashes, and encoded path tricks.",
+        "The community card adapts through narrow phone layouts and supports dark themes, high contrast, large touch targets, and visible keyboard focus.",
+        "The inline Discord mark is decorative because the surrounding text already names its destination, avoiding duplicate screen-reader announcements."
+      ]
+    },
+    {
+      "version": "0.9.76",
+      "date": "2026-08-16",
+      "title": "Build the catalog, not the JSON",
+      "summary": "Staff gain a visual Catalog Studio for creating, organizing, previewing, marketing, publishing, and safely archiving decks and curated collections at scale.",
+      "details": [
+        "Deck and collection directories now support search, status filters, useful sorts, compact summaries, and read-only references to every built-in deck.",
+        "A structured card workshop replaces raw JSON as the primary editor, with card search, category and difficulty filters, manual ordering, duplication, deletion, and field-level validation.",
+        "Editors can manage precise month, day, time, source label, and approved source URL fields while comparing spoiler-safe clue and revealed-card previews.",
+        "Featured placement, catalog order, search keywords, release labels, and staff-only campaign tags make packs and collections ready for discovery and marketing workflows.",
+        "Collections organize an intentional order of built-in and managed decks with add, remove, and reorder controls; publication refuses missing, draft, or archived managed decks.",
+        "Every edit remains local until Apply changes, with Discard actions, navigation and refresh guards, browser-exit protection, and honest reload-or-overwrite handling for revision conflicts.",
+        "Immutable slugs, reserved built-in identities, globally unique published card IDs, strict field validation, and atomic record-plus-history writes protect the playable catalog.",
+        "Publishing and archiving use dedicated recent-2FA actions and audit entries; a deck cannot be archived while a published collection still depends on it.",
+        "Revision histories provide read-only point-in-time snapshots for both decks and collections without turning old versions into destructive restore shortcuts.",
+        "Player-facing live operations expose only published catalog fields with stable IDs and revisions; drafts, archives, campaign tags, and staff actor details remain private.",
+        "Multiplayer now preserves managed-card month, day, time, and source labels with the same fidelity as local play."
+      ]
+    },
+    {
+      "version": "0.9.75",
+      "date": "2026-08-16",
+      "title": "Every card shows its work",
+      "summary": "All 900 built-in cards now pass a canonical source audit, while players and staff gain a secure, review-only path for checking Wikipedia and other approved sources.",
+      "details": [
+        "Every built-in deck now contains exactly 50 playable cards with globally unique IDs, preventing merge losses and metadata collisions.",
+        "A published, resumable source audit verifies all 900 card links and summaries against 775 canonical Wikipedia pages and records each page revision.",
+        "Twelve dead or renamed Wikipedia links were repaired and the server deck catalog was regenerated from the corrected source data.",
+        "The audit found 457 card years in their source summaries and places the remaining 443 into an explicit staff-review queue; a summary match is evidence, not an automatic date correction.",
+        "The player-facing See something off flow is now Check this card, available after reveal so it cannot bypass source-link point rules.",
+        "Wikipedia checks return a bounded canonical summary and revision snapshot; built-in Britannica, Library of Congress, Smithsonian, NASA, NOAA, National Archives, and UNESCO adapters return bounded page metadata.",
+        "Sources added by staff without a built-in adapter remain eligible for manual review and are never fetched automatically.",
+        "Every result only prefills a proposal for the support inbox. Players cannot directly update or publish a card.",
+        "Admins can manage approved source domains, and unsafe public suffixes, private hosts, IP addresses, credentials, ports, paths, and reserved domains are rejected.",
+        "Managed-pack source links and player correction links must match the active approved-source list.",
+        "Unrevealed hand-card reports omit date clues, while permanent source-validation errors stay visible instead of retrying forever as if the player were offline."
+      ]
+    },
+    {
+      "version": "0.9.74",
+      "date": "2026-08-16",
+      "title": "One hundred ways to make history",
+      "summary": "Achievements expand to 100 goals, while host rule controls gain consistent mobile layout, broad presets, validated custom values, and deliberate Apply/Discard handling.",
+      "details": [
+        "The achievement collection now contains exactly 100 unique goals spanning games, wins, placements, accuracy, points, streaks, timelines, decks, modes, and Solo, Local, and Online play.",
+        "Every room-rule row now uses consistent alignment, spacing, borders, and mobile sizing.",
+        "Score and streak targets offer many presets plus validated custom whole numbers from 3 through 1,000,000,000 instead of stopping at deck size.",
+        "Turn and disconnected-player timers include expanded presets and validated custom values up to 24 hours.",
+        "Room-rule edits remain a local draft until the host chooses Apply changes, with a visible unsaved state and a Discard action.",
+        "Local setup also supports preset and custom score and timer values."
+      ]
+    },
+    {
+      "version": "0.9.73",
+      "date": "2026-08-16",
+      "title": "Customize closes cleanly",
+      "summary": "Fixed the floating Customize panel so its close control exits the popover and restores the shortcut reliably.",
+      "details": [
+        "Closing the floating Customize panel now removes the panel instead of leaving it rendered over the page.",
+        "The floating Customize shortcut returns after closing, ready to reopen the appearance controls.",
+        "The fix preserves all mode, color, typography, and accessibility choices."
+      ]
+    },
+    {
+      "version": "0.9.72",
+      "date": "2026-08-16",
+      "title": "Settings put customization in one place",
+      "summary": "Appearance controls now live with Settings, while the floating Customize button is an explicit opt-in and stays off by default.",
+      "details": [
+        "The home menu now combines Customize with Settings so appearance controls have one clear destination.",
+        "Settings includes a Floating Customize button toggle for players who prefer a quick overlay shortcut.",
+        "The floating Customize shortcut defaults to Off and remains hidden until enabled.",
+        "The preference is saved locally on the device and is included in Reset reading & access settings.",
+        "When enabled, the floating shortcut opens the same appearance panel for mode, accent, background, text, and accessibility choices."
+      ]
+    },
+    {
+      "version": "0.9.71",
+      "date": "2026-08-16",
+      "title": "Solo play stays in the moment",
+      "summary": "Solo and Chronicle games now begin and continue without pass-the-device handoff screens, and a failed run stays on its completed result until the player chooses what comes next.",
+      "details": [
+        "Solo runs open directly on the playable hand without a Ready hand confirmation.",
+        "Chronicle challenge also skips Ready hand confirmations because only one human is using the device.",
+        "The hand-visibility privacy setting now appears only for multi-human Pass & play tables, where hiding the next player's cards is useful.",
+        "Pass & play and Nearby games with multiple people retain Reveal on turn handoffs when configured.",
+        "Dismissing the final placement result reveals the final-results screen without creating another game.",
+        "A failed Solo run preserves its game identity, earlier correct plays, score, timeline, and complete move history.",
+        "Play Again remains the only action that creates a fresh Solo or Chronicle game; Return home remains the separate exit choice."
+      ]
+    },
+    {
+      "version": "0.9.70",
+      "date": "2026-08-16",
+      "title": "See what players know",
+      "summary": "Staff analytics now explain which packs and categories are played, average results, common card misses and successes, and broader game-mode behavior.",
+      "details": [
+        "Completed games now contribute pack-selection, mode, context, card count, points, accuracy, category, and per-card result summaries.",
+        "Online completion summaries come from the authoritative room game history, including results hidden from other players by room display settings.",
+        "Local and Solo completions send a bounded best-effort anonymous summary; telemetry failures never interrupt or delay a game.",
+        "The staff Analytics page shows total placements, correct and missed cards, average accuracy, average cards per game, and average points per game.",
+        "Pack usage ranks selected packs by completed games and reports the combined result for games in which each pack appeared.",
+        "Category tables show play volume and correct, missed, and accuracy results for every chronology category.",
+        "Separate rankings identify the most commonly missed and most commonly correct cards, including their play counts and accuracy.",
+        "Context and game-mode panels compare how often Solo, Local, and Online tables and the five rule sets are completed.",
+        "Player names are never included; custom deck identifiers collapse to Custom and custom card titles collapse to Custom card before leaving the device.",
+        "Incoming summaries are same-origin, rate-limited, size-capped, allowlisted, and retained under the existing analytics expiry policy."
+      ]
+    },
+    {
+      "version": "0.9.69",
+      "date": "2026-08-16",
+      "title": "Put a password on your table",
+      "summary": "Hosts can optionally protect public and hidden Online rooms with a password while saved player seats continue to reconnect without repeated prompts.",
+      "details": [
+        "Room setup now accepts an optional 4–72 character password for public, invite-only, and private Online rooms.",
+        "Joining by code includes a password field, and password-protected public rooms show a clear Locked marker before a player tries to enter.",
+        "Selecting a protected public room fills its room code and asks for the password instead of making a guaranteed-to-fail join request.",
+        "Passwords are transformed with a unique random salt and a deliberately slow scrypt hash before durable storage; plaintext is never retained or returned to players.",
+        "Missing and incorrect passwords receive the same rejection, and excessively long join attempts are refused before password hashing.",
+        "Existing rooms and password-free rooms continue to work exactly as before.",
+        "A player who has already joined resumes with the saved reconnect token, so an app close or network drop does not force another password entry.",
+        "Protected private and invite-only rooms remain absent from the public room browser and are still reachable only through a shared code."
+      ]
+    },
+    {
+      "version": "0.9.68",
+      "date": "2026-08-16",
+      "title": "Rooms clean up after themselves",
+      "summary": "Online room lifecycle rules now remove abandoned lobbies, absent games, stalled running games, and completed tables while preserving active and reconnecting players.",
+      "details": [
+        "Empty waiting rooms automatically clear after 15 minutes without a present player.",
+        "Games with nobody present retain a six-hour reconnect window before their room is removed.",
+        "A running game with no turn or gameplay progress clears after 12 hours even if a stale browser resumes polling.",
+        "Finished rooms remain available for a one-hour results review, then clear automatically.",
+        "Any genuinely active turn updates the gameplay clock, so active tables are not mistaken for stalled rooms.",
+        "Authorized staff can still remove one exact room immediately or preview and confirm a bulk inactive-room cleanup.",
+        "Bulk cleanup protects games in progress by default; including them requires an explicit reason, recent 2FA, and an audit record.",
+        "The staff room page now states every automatic lifecycle threshold beside the live directory."
+      ]
+    },
+    {
+      "version": "0.9.67",
+      "date": "2026-08-16",
+      "title": "Every collection opens up",
+      "summary": "The Deck Builder now previews complete collections and gives players precise controls for finding, sorting, choosing, and modifying their cards.",
+      "details": [
+        "Every unlocked built-in, managed, weekly, or custom collection opens a complete card browser before game setup.",
+        "Search within a collection by card title, description, or category and filter by category or Easy, Medium, and Hard difficulty.",
+        "Sort the card browser by original deck order, title, oldest first, or newest first, with accurate matching-card counts.",
+        "Collection-level search, category filters, card-count sorting, A–Z sorting, and newest-custom sorting remain available on the main shelf.",
+        "Custom collections expose edit, duplicate, export, and confirmation-protected delete actions inside their preview.",
+        "Empty card filters have a clear recovery action, and the browser adapts from four controls to a single-column phone layout.",
+        "A dedicated Use this deck action keeps browsing separate from starting a game."
+      ]
+    },
+    {
+      "version": "0.9.66",
+      "date": "2026-08-16",
+      "title": "The table fits the screen",
+      "summary": "Mobile play now keeps a compact timeline and swipeable hand in view, while clearer direction, timers, and Chronicle difficulty improve every table.",
+      "details": [
+        "Phone timeline cards shrink to a stable, anchored rail and omit descriptions after placement so the chronology stays readable without taking over the screen.",
+        "Hands are horizontal swipe carousels with snap points; touch swipes scroll instead of starting a drag, while tapping still selects a card.",
+        "The mobile game title, turn status, timeline, gaps, and hand use a compact single-pane layout with consistent insertion-point height.",
+        "Older and Newer labels now mark the two ends of every timeline, and the first insertion point aligns with every later gap on desktop and mobile.",
+        "Customize moved into the home menu instead of floating over play, while the full appearance panel remains available on demand.",
+        "Chronicle challenge replaces the vague versus-AI wording and offers Casual, Balanced, and Expert accuracy settings.",
+        "Only Time Attack uses timer-focused headings, and its live seconds remain visible beside the shared timeline."
+      ]
+    },
+    {
+      "version": "0.9.65",
+      "date": "2026-08-16",
+      "title": "Updates and decks stay easy to explore",
+      "summary": "The desktop changelog now scrolls correctly, while every game setup has a searchable, filterable deck selector with clear descriptions and card previews.",
+      "details": [
+        "The changelog keeps its header and Dismiss action visible while the release history scrolls inside a dedicated desktop and mobile region.",
+        "Opening release notes locks background page movement, supports Escape, and restores the previous page state when closed.",
+        "Deck and pack selection can be searched by name, story, description, or category and filtered to a specific category.",
+        "Every visible deck has a stable, non-overlapping card with its card count, categories, and short pack description.",
+        "A dedicated Preview cards action opens eight spoiler-safe sample cards without revealing their dates.",
+        "The selector uses a single-column phone layout and a bounded, touch-friendly scroll region so the complete catalog remains discoverable."
+      ]
+    },
+    {
+      "version": "0.9.64",
+      "date": "2026-08-16",
+      "title": "Staff can guide the live game",
+      "summary": "Authorized staff can now pause or restore individual player features from Global settings without shipping another build.",
+      "details": [
+        "Twelve switches cover release notices, achievements, the weekly poll, the Pack Store, previews, point unlocks, donations, future Stripe packs, late joins, reconnectable seats, away-player skipping, and source-link penalties.",
+        "Feature changes are protected by the existing staff permission, CSRF, and recent-authenticator checks and are recorded in the audit log.",
+        "Online players refresh live-operations settings every minute, so player-facing entry points respond without requiring a new deployment.",
+        "Room setup and host editing hide disabled room rules and force them off in newly submitted room settings.",
+        "Paused Store, preview, donation, poll, achievement, release-notice, and source-warning experiences disappear cleanly while saved progress and room data remain intact.",
+        "Every switch defaults to on, preserving the current game until authorized staff deliberately changes it."
+      ]
+    },
+    {
+      "version": "0.9.63",
+      "date": "2026-08-16",
+      "title": "Find and preview your next story",
+      "summary": "The Store is now a searchable pack catalog with spoiler-safe previews and clear point, donation, and future Stripe paths.",
+      "details": [
+        "Search pack names, story descriptions, and category labels from one catalog field.",
+        "Filter the shelf by category or by All, Locked, Owned, and Ready now unlock states.",
+        "Preview six sample cards from any pack without revealing their dates or chronology clues.",
+        "Locked packs show their point cost and remaining balance, and become directly unlockable when enough points are available.",
+        "Future per-pack Stripe checkout is visible but remains disabled until the verified paid catalog launches.",
+        "Donation links lead to the PayPal support options and explicitly explain that donations do not automatically unlock a current pack."
+      ]
+    },
+    {
+      "version": "0.9.62",
+      "date": "2026-08-16",
+      "title": "More story on every playable card",
+      "summary": "Playable cards now carry a concise chronology-safe description, supported by a more unified type, color, focus, and control system.",
+      "details": [
+        "Local and Online hand cards show the card's short clue beneath its title before placement.",
+        "Temporal clues remain scrubbed from playable descriptions so the hidden date stays part of the game.",
+        "Descriptions use a consistent three-line layout that keeps hands readable on desktop, mobile, and enlarged-text settings.",
+        "Shared surface, subtle-text, border, and focus tokens now drive playable cards and form controls across light, dark, and custom themes.",
+        "Selected-card descriptions, date rows, and info controls now derive contrast from the active theme instead of fixed colors."
+      ]
+    },
+    {
+      "version": "0.9.61",
+      "date": "2026-08-16",
+      "title": "The game now stops at the ending",
+      "summary": "Single-player runs always show their final results and wait for a clear replay choice instead of jumping into another game.",
+      "details": [
+        "The last card's result remains visible until the player chooses to continue to the final summary.",
+        "Finishing a Solo or versus-Chronicle game can no longer call the new-game action from the result modal.",
+        "The final summary now remains the only place where Try again or Play again can start a fresh run.",
+        "Returning home is always available beside the replay choice.",
+        "A regression test protects the result-to-summary-to-replay sequence."
+      ]
+    },
+    {
+      "version": "0.9.60",
+      "date": "2026-08-16",
+      "title": "Your chronicle has milestones",
+      "summary": "Achievements, live unlock notices, and guided goals now turn Solo, Local, and Online statistics into a shared progression journey.",
+      "details": [
+        "Fifteen achievements cover first steps, wins, accuracy, points, streaks, long timelines, game modes, categories, decks, and ways to play.",
+        "Dedicated milestones recognize Solo challenges, Local multiplayer tables, and Online multiplayer rooms.",
+        "Newly earned achievements appear immediately in a dismissible in-game notice and keep their unlock date on this device.",
+        "The Stats screen now includes a complete achievement collection plus the three closest goals with live progress bars.",
+        "Online game completion is recorded for every player who reaches the finished table, and reconnecting cannot count the same result twice."
+      ]
+    },
+    {
+      "version": "0.9.59",
+      "date": "2026-08-16",
+      "title": "Keep every turn moving fairly",
+      "summary": "Hosts can opt into an away-player skip timer and decide whether opening a playable card's source forfeits its points.",
+      "details": [
+        "Disconnected-player skipping is off by default and can be configured by the host from 15 seconds to 5 minutes.",
+        "An away skip advances the turn without consuming the absent player's card or recording a missed answer.",
+        "Opening a source from a playable hand card now shows a clear confirmation that the card will lose its points if placed correctly.",
+        "The source penalty is enabled by default, can be disabled by the host, and is enforced by the multiplayer server rather than trusting the browser.",
+        "Local, solo, versus-Chronicle, Nearby, and Online setup surfaces all use the same source-warning rule."
+      ]
+    },
+    {
+      "version": "0.9.58",
+      "date": "2026-08-16",
+      "title": "Come back to the same table",
+      "summary": "Hosts can open active games to new players, while reconnectable seats remain protected by default.",
+      "details": [
+        "Hosts can choose whether new players may join after a game has started.",
+        "Rejoining after an app close or network interruption is enabled by default and can be configured by the host.",
+        "Public in-progress rooms appear in the room browser only when the host allows late joins.",
+        "Every release now has a dismissible player-facing update notice and a detailed changelog available from Home.",
+        "Players already online are prompted when a newer deployed version is detected and can reload when ready."
+      ]
+    },
+    {
+      "version": "0.9.57",
+      "date": "2026-08-15",
+      "title": "A support inbox staff can actually use",
+      "summary": "Support requests and card feedback arrive in one filterable dashboard where staff can assign, prioritize, track, and resolve reports while replies route through the configured support address.",
+      "details": [
+        "Support requests and card feedback land in a single filterable staff inbox with assignment, priority, status, private notes, replies, and resolution.",
+        "support@monydragon.com is the default destination and authorized staff can change it from Global settings; public support links follow the configured address.",
+        "The staff login and dashboard gain system, light, and dark themes plus custom colors, typography, reduced motion, high contrast, and larger targets."
+      ]
+    },
+    {
+      "version": "0.9.56",
+      "date": "2026-08-15",
+      "title": "The host's table is the table",
+      "summary": "Hosts govern the merged deck, disconnected players pause their turn, optional turn clocks are server-authoritative, and first-time players follow their device theme.",
+      "details": [
+        "The host's selected packs and merged card total now govern the whole room, so guests can ready and play without owning those packs locally.",
+        "Disconnected players pause their turn instead of being silently skipped, while explicit departures and removals publish a clear reason.",
+        "Hosts can choose off, 15, 30, 45, 60, 90, or 120 second turn limits; server-authoritative timeouts are announced to everyone and never award points.",
+        "First-time players follow their device theme until they explicitly choose Light or Dark."
+      ]
+    },
+    {
+      "version": "0.9.55",
+      "date": "2026-08-15",
+      "title": "An invite-only staff console",
+      "summary": "A secure /staff console with owner setup, TOTP 2FA, role-based permissions, room operations, pack authoring, and a hardened OAuth flow launches behind MongoDB.",
+      "details": [
+        "The owner creates the first password with a high-entropy one-time setup code or verified Google identity, then enrolls TOTP 2FA and saves backup codes.",
+        "Owner, admin, moderator, author, analyst, and partner roles use server-enforced permissions; authorized staff invite teammates and manage roles, status, 2FA resets, and the audit trail.",
+        "Staff can monitor players, rooms, analytics, and activity; clean up inactive rooms; publish announcements; and control maintenance, registration, and room limits.",
+        "Authors create and revise sourced packs, while publishing requires the publish permission and a recent 2FA check; published packs are pinned into active room snapshots.",
+        "Local, Online, and Nearby rooms support up to 32 players, with 2–16 recommended, deck-aware table-size validation, and large-roster layouts."
+      ]
+    },
+    {
+      "version": "0.9.50",
+      "date": "2026-08-15",
+      "title": "Hands reveal on your turn",
+      "summary": "Hosts can keep every waiting hand blank until its turn begins, and choose between Standard or Draw hand flow with independent visibility rules.",
+      "details": [
+        "Reveal-on-turn hands hide card details on the server until the exact moment a turn begins.",
+        "Draw mode starts with one card, replenishes on correct plays, and draws one to four host-selected replacements after a miss.",
+        "Standard or Draw flow combines with Ready Hand or Reveal on Turn visibility in Local and Online setup, and Nearby invites preserve the same rules."
+      ]
+    },
+    {
+      "version": "0.9.49",
+      "date": "2026-08-15",
+      "title": "The community builds the next pack",
+      "summary": "A weekly home-screen poll chooses a 50-card community pack automatically, while card feedback and the player support form make corrections and help easy to send.",
+      "details": [
+        "The weekly poll opens with a player-powered spotlight on Home; one vote per device, up to three ideas per participant, and a bounded 100-entry board.",
+        "The highest-voted idea becomes a named 50-card pack selected deterministically from the sourced catalog and released automatically on the configured schedule.",
+        "Every card and post-play result offers a See something off action for dates, names, descriptions, sources, disambiguation, and other issues.",
+        "The Support screen includes an accessible help form that opens a pre-filled email to support@monydragon.com.",
+        "Light and dark canvases now preserve the shared theme background across every screen, and scaled text viewports no longer expose a white strip."
+      ]
+    },
+    {
+      "version": "0.9.43",
+      "date": "2026-08-15",
+      "title": "Ads fall back gracefully",
+      "summary": "Whenever the online AdSense slot reports no fill, is blocked, or fails, the Monydragon Services sponsor appears in the same banner instead of an empty box.",
+      "details": [
+        "The automatic sponsor fallback keeps the same dismiss and Go ad-free actions, and ad-free entitlements still remove the entire banner.",
+        "The manual AdSense unit stays in normal document flow, never floats over content, and stays gated by local entitlements."
+      ]
+    },
+    {
+      "version": "0.9.36",
+      "date": "2026-08-15",
+      "title": "Policy-safe ads",
+      "summary": "The supplied AdSense footer slot renders in a persistent normal-flow banner instead of a floating box, while ad-free entitlements remain protected.",
+      "details": [
+        "The Google slot and publisher meta tag live in the app shell, while the placement renders only after billing and ad-free entitlements are checked.",
+        "Verified subscriptions, lifetime access, PayPal donations, and earned ad-free rewards remove the Google placement entirely.",
+        "/ads.txt remains available at the site root for AdSense review."
+      ]
+    },
+    {
+      "version": "0.9.35",
+      "date": "2026-08-15",
+      "title": "An ad rail that respects the game",
+      "summary": "A persistent responsive footer banner replaces floating ads, with honest loading diagnostics and full ad-free protection.",
+      "details": [
+        "The Footer_Banner slot renders in a persistent normal-flow banner on desktop, mobile, and game views, never as a floating overlay.",
+        "The rail stays visibly reserved while Google loads or returns no fill, with clear status for review, inventory, and ad-blocking conditions.",
+        "Subscription, lifetime, PayPal donation, and earned ad-free entitlements remove the entire rail."
+      ]
+    },
+    {
+      "version": "0.9.34",
+      "date": "2026-08-15",
+      "title": "Support the chronicle",
+      "summary": "PayPal donations grant temporary ad-free time by tier, Stripe stays clearly coming soon, and a quick tutorial explains the whole game.",
+      "details": [
+        "PayPal donations link directly to monydragon@gmail.com with $0.99/1 day through $49.99/1 year ad-free tiers; the one-year tier is marked best value.",
+        "After donating, players confirm their tier on-device for temporary ad-free time; the bridge is clearly labeled temporary until receipt verification is added.",
+        "A short data-driven tutorial covers modes, placement, results, Collections versus Store, accessibility, Stats, and offline play."
+      ]
+    },
+    {
+      "version": "0.9.33",
+      "date": "2026-08-15",
+      "title": "Earn first",
+      "summary": "Five free 50-card packs, a play-to-earn points economy, temporary ad-free redemptions, and an honest pre-1.0 soft launch arrive together.",
+      "details": [
+        "Fresh profiles start with Foundations, Signals, After Hours, Wild World, and Makers Lab; Collections show only unlocked packs and the Store lists every locked path.",
+        "Every played card counts toward points, including misses; the cadence is configurable and a 50-card pack costs 25 points.",
+        "Players can spend 75 points for a week, 250 for a month, or 2,500 for a year of ad-free play, plus claim one free month before 1.0.",
+        "Stripe paid unlocks remain disabled until checkout, webhook, cancellation, and restore verification is complete."
+      ]
+    },
+    {
+      "version": "0.9.32",
+      "date": "2026-08-15",
+      "title": "Monydragon credits and verified unlocks",
+      "summary": "A small labeled sponsor links to Monydragon, while a $2.99/month or $9.99 one-time Stripe path unlocks the current catalog with durable recovery codes.",
+      "details": [
+        "The free edition carries a clearly labeled Monydragon Services sponsor with links to monydragon.com and its services page.",
+        "The $2.99/month subscription or $9.99 one-time purchase removes the sponsor and unlocks every current pack after server verification.",
+        "Future packs stay separate $0.50 add-ons, and recovery codes restore verified access on another device.",
+        "Server-only Stripe REST calls create checkout sessions while signed webhooks persist entitlements in the durable backend."
+      ]
+    },
+    {
+      "version": "0.9.29",
+      "date": "2026-08-15",
+      "title": "Nearby stays on hold",
+      "summary": "The Multiplayer explorer keeps a visible Nearby tab labeled Coming soon, so unfinished Bluetooth prompts never reach players.",
+      "details": [
+        "Nearby is disabled behind a release flag that prevents capability checks, permission prompts, scans, joins, and bridge handoff.",
+        "An old Nearby route opens a Coming Soon screen instead of a partially released flow.",
+        "Local pass-and-play and Online hosted rooms remain active."
+      ]
+    },
+    {
+      "version": "0.9.28",
+      "date": "2026-08-15",
+      "title": "Nearby handoff made explicit",
+      "summary": "Active Nearby rooms open a guided share/setup dialog, and first-time Bluetooth scans handle Android scan-response quirks reliably.",
+      "details": [
+        "A dedicated share dialog shows the room code, native share/copy actions, a manual invite link, and step-by-step bridge and guest instructions.",
+        "The Web Bluetooth chooser uses acceptAllDevices with the Time Chronicles service as an optional service for Android scan-response quirks.",
+        "The Android bridge keeps the service in the primary advertisement and the phone name in scan-response data."
+      ]
+    },
+    {
+      "version": "0.9.27",
+      "date": "2026-08-15",
+      "title": "Reliable two-device discovery",
+      "summary": "Nearby scans approved hosts in parallel with timeouts, reconnects GATT links before writes, and fixes the end-screen layout.",
+      "details": [
+        "An explicit Scan now action plus automatic getDevices() refreshes connect remembered hosts independently and in parallel.",
+        "The browser reconnects an approved device before a join or state packet and times out stalled GATT operations with recovery text.",
+        "The Android bridge serves compact raw-JSON invites, caps read responses to MTU-1, and buffers prepared long writes.",
+        "Winner, resolution, and handoff panels scroll within the viewport on desktop and mobile."
+      ]
+    },
+    {
+      "version": "0.9.26",
+      "date": "2026-08-15",
+      "title": "Bluetooth rooms you can join",
+      "summary": "Discovered Nearby room cards open straight into the join flow with the host's deck and rules, and the Android bridge contract is documented.",
+      "details": [
+        "A discovered Bluetooth room card opens the join flow instead of a generic Nearby screen, sending the guest's name through the join characteristic.",
+        "Nearby hosts choose decks, Classic or Survival rules, score, hearts, recycling, hints, action visibility, dates, and card info before hosting.",
+        "The bridge advertises the documented service and invite characteristic and accepts guest joins."
+      ]
+    },
+    {
+      "version": "0.9.25",
+      "date": "2026-08-15",
+      "title": "Automatic Bluetooth lobby scan",
+      "summary": "The Nearby tab re-checks already-approved devices and lists valid room invites without a surprise permission chooser.",
+      "details": [
+        "Automatic getDevices() scans list valid Time Chronicles room invites from devices the player already approved.",
+        "Scan Bluetooth rooms remains the explicit first-connection action; afterward automatic scans reconnect to remembered devices.",
+        "Canceled choosers, denied permissions, unsupported browsers, and out-of-range devices get specific recovery guidance."
+      ]
+    },
+    {
+      "version": "0.9.24",
+      "date": "2026-08-15",
+      "title": "One explorer for every way to play",
+      "summary": "Multiplayer presents Local, Nearby, and Online as equal paths with a shared invite-code flow and theme-safe controls.",
+      "details": [
+        "Local pass-and-play, Nearby Bluetooth, and Online hosted rooms live in one connection-aware explorer.",
+        "Nearby room records persist synchronously and survive explorer returns, and mode-qualified links route to the right path.",
+        "Selected cards, switches, room controls, and explorer panels use theme tokens in dark mode."
+      ]
+    },
+    {
+      "version": "0.9.23",
+      "date": "2026-08-15",
+      "title": "A unified room explorer",
+      "summary": "Multiplayer opens one explorer with Nearby and Online switchable, explicit Bluetooth discovery, and offline fallback.",
+      "details": [
+        "Players switch between Nearby and Online rooms without losing the offline versus hosted distinction.",
+        "An explicit Web Bluetooth scan discovers compatible native or bridge hosts and decodes them into the same join flow.",
+        "Offline mode disables Online browsing while Nearby, Bluetooth sharing, and local play remain available."
+      ]
+    },
+    {
+      "version": "0.9.22",
+      "date": "2026-08-15",
+      "title": "Offline Nearby Rooms",
+      "summary": "Nearby rooms can be created, shared, and played without a connection, and the Online lobby stays honest about being offline.",
+      "details": [
+        "The Online lobby disables while navigator.onLine reports no connection and returns automatically after reconnecting.",
+        "Nearby rooms create, save, join, share, and expire after 24 hours of inactivity with no server or coverage.",
+        "A self-contained invite URL can travel through Bluetooth, Nearby Share, or the OS share sheet."
+      ]
+    },
+    {
+      "version": "0.9.21",
+      "date": "2026-08-15",
+      "title": "Download the game",
+      "summary": "A desktop Download action installs the PWA on Windows, macOS, and Linux, and Multiplayer gains a clear three-path layout.",
+      "details": [
+        "The home action reads Download and uses the native PWA install flow, with OS-specific guidance for unsupported browsers.",
+        "Multiplayer clearly offers Local, Nearby, and Online; Nearby opens a Bluetooth-assisted invite flow.",
+        "Hosts can share an invite through the OS share sheet or copy a direct link and code."
+      ]
+    },
+    {
+      "version": "0.9.20",
+      "date": "2026-08-15",
+      "title": "Install offline",
+      "summary": "The app becomes an installable PWA with a versioned offline shell and offline local play.",
+      "details": [
+        "Install offline opens the native browser install prompt with Safari Add to Home Screen guidance.",
+        "A versioned service worker caches the client, manifest, icons, and an offline fallback while keeping API requests network-only.",
+        "Built-in decks, local games, custom decks, themes, preferences, stats, and queued reports work without a connection."
+      ]
+    },
+    {
+      "version": "0.9.19",
+      "date": "2026-08-15",
+      "title": "Reading, motion, and access",
+      "summary": "Font family and size, reduced motion, high contrast, and large touch targets persist across every screen and control.",
+      "details": [
+        "Choose Small, Standard, Large, or Extra large sizing and System, DM Sans, Space Grotesk, or Serif families through root design tokens.",
+        "Reduced motion disables decorative animation; high contrast strengthens text, borders, and focus; large targets widen primary controls.",
+        "A Skip to main content link, expanded focus-visible coverage, and labeled switch groups improve keyboard and screen-reader navigation.",
+        "Preferences validate field-by-field, survive reloads, and reset without touching game data."
+      ]
+    },
+    {
+      "version": "0.9.18",
+      "date": "2026-08-15",
+      "title": "Separate stats and safe card info",
+      "summary": "Stats split into Local, Solo, and Online views, and the card detail panel redacts every date-bearing clue.",
+      "details": [
+        "Multiplayer analytics default to a Local view with independent Solo and Online tabs for games, accuracy, points, modes, decks, and history.",
+        "The detail panel keeps the full story and source while redacting visible years, dates, eras, centuries, ranges, clock times, and date-bearing labels.",
+        "Hosted-room cards lead with the room name with dedicated host, player, and deck fields."
+      ]
+    },
+    {
+      "version": "0.9.17",
+      "date": "2026-08-15",
+      "title": "Durable storage and the first big catalog",
+      "summary": "Pluggable S3-compatible storage, card reports, connection resilience, custom theming, game modes, stats, and a fact-checked catalog arrive together.",
+      "details": [
+        "A shared blob client auto-detects S3-compatible storage, Vercel Blob, then a local file, keeping rooms and reports durable across serverless instances.",
+        "Report this card, offline queuing, connection-loss banners, placement retries, and ghost-room sweeps keep tables honest and recoverable.",
+        "Custom theming, honest year-only dates, source links, and new Anime, Programming, and console and tech decks expand the catalog.",
+        "Classic and Survival modes, player analytics, timeline counters, hand-card info menus, room rules, and the play-again flow land in one release.",
+        "All cards carry sources and long-form stories, with full dates where known and a host toggle for year-only labels."
+      ]
+    },
+    {
+      "version": "0.9.9",
+      "date": "2026-08-14",
+      "title": "Merging decks and sweeping ghosts",
+      "summary": "Unlimited deck merging, card recycling, a searchable room browser, and the first automatic ghost-room sweep.",
+      "details": [
+        "Pick any number of decks in setup, local play, or the online lobby; they merge into one combined collection.",
+        "When the draw pile is empty the discard pile reshuffles back in so games never stall.",
+        "Search public rooms by name, host, or code and filter by deck or open seats.",
+        "Waiting rooms with no one present are removed after 15 minutes and stalled turns auto-skip."
+      ]
+    },
+    {
+      "version": "0.9.7",
+      "date": "2026-08-14",
+      "title": "Host management",
+      "summary": "Required room names, host transfer, and host kick with recovery for removed players.",
+      "details": [
+        "Room creation requires a name, and hosts can transfer designation to any player.",
+        "Host kick skips the active player's turn when they are removed.",
+        "Removed players drop cleanly back to join/host with a clear notice."
+      ]
+    },
+    {
+      "version": "0.9.6",
+      "date": "2026-08-14",
+      "title": "Resilient rooms",
+      "summary": "Rooms persist in Vercel Blob with durable re-reads and retried poll failures, plus a theme-independent invite card.",
+      "details": [
+        "Every room lookup re-reads durable state before failing and the client retries transient poll failures.",
+        "The invite-code card guarantees contrast regardless of theme with clear Back to join / host and Leave room actions.",
+        "Public rooms appear in the hosted list while Invite only and Private rooms stay hidden behind the shared code."
+      ]
+    },
+    {
+      "version": "0.9.5",
+      "date": "2026-08-14",
+      "title": "The original chronicle",
+      "summary": "The first playable build: a timeline card game with solo and pass-and-play multiplayer, themed decks, drag placement, and a shared game engine.",
+      "details": [
+        "Single Player and Multiplayer paths with 2–4 player local pass-and-play.",
+        "A 32-card Foundations deck plus themed packs across music, video games, weather, history, film, sports, and food.",
+        "Hidden hand dates, tap and drag placement, forgiving drop zones, scoring, reveals, automatic turn handoff, and a win screen.",
+        "A shared UI-independent game engine with tests, persistent rooms, reconnect tokens, discovery, and direct code joins.",
+        "A local project studio, Creator Studio deck editor, and solo Chronicle challenge round out the first release."
+      ]
+    }
+  ]
+}

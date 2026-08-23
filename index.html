@@ -1,146 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex" />
-    <title>Time Chronicles desktop downloads</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-        font-family: system-ui, sans-serif;
-      }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: #111722;
-        color: #f7f3ed;
-      }
-      main {
-        width: min(42rem, calc(100% - 3rem));
-      }
-      p {
-        color: #bdc5d2;
-        line-height: 1.6;
-      }
-      a {
-        color: #f29a84;
-      }
-      code {
-        overflow-wrap: anywhere;
-      }
-      #downloads {
-        display: grid;
-        gap: 0.75rem;
-        margin: 1.5rem 0;
-      }
-      .download {
-        display: grid;
-        gap: 0.35rem;
-        padding: 1rem;
-        border: 1px solid #48536a;
-        color: inherit;
-        text-decoration: none;
-      }
-      .download:hover,
-      .download:focus-visible {
-        border-color: #f29a84;
-      }
-      .download small {
-        color: #bdc5d2;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <p>TIME CHRONICLES</p>
-      <h1>Desktop release files</h1>
-      <p>
-        Choose a desktop preview installer from the HTTPS-hosted release feed.
-        Published file sizes and SHA-256 checksums let you verify a download;
-        the metadata itself is not cryptographically signed.
-      </p>
-      <div id="downloads" role="status" aria-live="polite">
-        Loading current installers…
-      </div>
-      <p>
-        Unsigned Windows and macOS builds can show SmartScreen or Gatekeeper
-        warnings. The installable web app remains available without a native
-        installer.
-      </p>
-      <p>
-        <a href="https://time-chronicles.vercel.app">Open Time Chronicles</a>
-      </p>
-      <p>
-        Machine-readable feed:
-        <a href="./desktop-releases.json"><code>desktop-releases.json</code></a>
-      </p>
-    </main>
-    <script>
-      const labels = { windows: "Windows", macos: "macOS", linux: "Linux" };
-      const downloads = document.querySelector("#downloads");
-      const detected = /Windows/i.test(navigator.userAgent)
-        ? "windows"
-        : /Macintosh|Mac OS X/i.test(navigator.userAgent)
-          ? "macos"
-          : /Linux/i.test(navigator.userAgent) &&
-              !/Android/i.test(navigator.userAgent)
-            ? "linux"
-            : "";
-      fetch("./desktop-releases.json", { cache: "no-store" })
-        .then((response) => {
-          if (!response.ok) throw new Error("Release details are unavailable.");
-          return response.json();
-        })
-        .then((manifest) => {
-          downloads.replaceChildren();
-          if (
-            manifest.status !== "available" ||
-            !Array.isArray(manifest.artifacts) ||
-            manifest.artifacts.length === 0
-          ) {
-            downloads.textContent =
-              manifest.message || "Desktop installers are not published yet.";
-            return;
-          }
-          const heading = document.createElement("strong");
-          heading.textContent = `Current desktop release: Time Chronicles v${manifest.version}`;
-          downloads.append(heading);
-          const artifacts = [...manifest.artifacts].sort(
-            (left, right) =>
-              Number(right.platform === detected) -
-              Number(left.platform === detected),
-          );
-          for (const artifact of artifacts) {
-            if (
-              !["windows", "macos", "linux"].includes(artifact.platform) ||
-              typeof artifact.url !== "string" ||
-              !artifact.url.startsWith("https://")
-            )
-              continue;
-            const link = document.createElement("a");
-            link.className = "download";
-            link.href = artifact.url;
-            const title = document.createElement("strong");
-            title.textContent = `${labels[artifact.platform]} · ${artifact.label}`;
-            const detail = document.createElement("small");
-            const megabytes = Number(artifact.sizeBytes) / (1024 * 1024);
-            detail.textContent = `${Number.isFinite(megabytes) ? megabytes.toFixed(1) : "?"} MB · SHA-256 ${artifact.sha256}`;
-            link.append(title, detail);
-            downloads.append(link);
-          }
-          if (!downloads.children.length)
-            downloads.textContent =
-              "No supported desktop installers are available.";
-        })
-        .catch((error) => {
-          downloads.textContent =
-            error instanceof Error
-              ? error.message
-              : "Release details are unavailable.";
-        });
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Official Time Chronicles desktop downloads for Windows, macOS, and Linux." />
+  <title>Time Chronicles desktop downloads</title>
+  <style>
+    :root{color-scheme:dark;--paper:#111722;--panel:#192231;--ink:#f7f3ed;--muted:#bdc5d2;--line:#48536a;--accent:#f29a84;--yellow:#f4d06f;font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(circle at 85% 0,#26334a 0,transparent 38%),var(--paper);color:var(--ink)}
+    a{color:inherit}.skip{position:absolute;left:-9999px;top:1rem}.skip:focus{left:1rem;z-index:5;padding:.75rem;background:var(--ink);color:var(--paper)}
+    header.site{display:flex;justify-content:space-between;align-items:center;padding:1rem clamp(1rem,4vw,4rem);border-bottom:1px solid var(--line)}header.site strong{letter-spacing:.12em;text-transform:uppercase}header.site a{color:var(--muted)}
+    main{width:min(1180px,calc(100% - 2rem));margin:auto;padding:clamp(2.5rem,7vw,6rem) 0 5rem}
+    .eyebrow{color:var(--accent);font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.hero{max-width:800px}.hero h1{margin:.5rem 0 1rem;font-family:Georgia,serif;font-size:clamp(3rem,8vw,6.5rem);font-weight:500;line-height:.88;letter-spacing:-.055em}.hero h1 em{color:var(--accent);font-weight:400}.hero p{max-width:64ch;color:var(--muted);font-size:1.05rem;line-height:1.65}
+    #status{display:grid;gap:.25rem;margin:1.5rem 0;padding:1rem 1.2rem;border-left:4px solid var(--accent);background:#18202e}#status span{color:var(--muted)}
+    nav{display:flex;flex-wrap:wrap;gap:.65rem;margin:2rem 0}nav a{padding:.65rem 1rem;border:1px solid var(--line);border-radius:999px;text-decoration:none}nav a.detected{background:var(--ink);color:var(--paper)}
+    #platforms{display:grid;gap:1.25rem}.platform{scroll-margin-top:1rem;padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);border-radius:1rem;background:color-mix(in srgb,var(--panel) 92%,transparent)}.platform.detected{border:2px solid var(--accent)}.platform>header{display:flex;justify-content:space-between;align-items:start;gap:1rem}.platform h2{margin:.25rem 0;font-family:Georgia,serif;font-size:clamp(2rem,5vw,3.5rem)}.platform-badge{padding:.45rem .7rem;border-radius:999px;background:var(--ink);color:var(--paper);font-weight:800}.detected-label{color:var(--accent);font-size:.68rem;font-weight:900;letter-spacing:.12em}.facts{display:flex;flex-wrap:wrap;gap:1rem 2rem;margin:1rem 0}.fact{display:grid;gap:.2rem}.fact small{color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    .artifacts{display:grid;gap:.75rem}.artifact{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.7rem 1rem;align-items:center;padding:1rem;border-radius:.75rem;background:#111925}.artifact div{display:grid;gap:.25rem}.artifact small{color:var(--muted)}.download{padding:.7rem 1rem;border:1px solid var(--accent);border-radius:.6rem;background:var(--accent);color:#111722;font-weight:900;text-decoration:none}.download:hover,.download:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}.artifact details{grid-column:1/-1}.artifact code{display:block;margin-top:.5rem;color:var(--muted);font-size:.72rem;overflow-wrap:anywhere}
+    .guidance{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.25rem}.guidance article{padding:1rem;border-top:1px solid var(--line)}.guidance h3{margin:0 0 .5rem}.guidance p,.guidance ol{margin:0;color:var(--muted);line-height:1.55}.whats-new{display:flex;flex-wrap:wrap;gap:.75rem 1rem;align-items:center;margin-top:1.25rem;padding:1rem;border-radius:.75rem;background:#272635}.whats-new p{flex:1 1 30rem;margin:0;color:var(--muted)}.whats-new a{font-weight:800}.footer-note{margin-top:1.5rem;padding:1.2rem;border:1px solid var(--line);color:var(--muted);line-height:1.6}.footer-note a{color:var(--accent)}
+    @media(max-width:760px){.artifact{grid-template-columns:1fr}.artifact details{grid-column:1}.guidance{grid-template-columns:1fr}.platform>header{align-items:center}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to downloads</a>
+<header class="site"><strong>Time Chronicles</strong><a href="https://time-chronicles.vercel.app">Open the web app ↗</a></header>
+<main id="content">
+  <section class="hero"><span class="eyebrow">official desktop editions</span><h1>Take the timeline<br /><em>to your desktop.</em></h1><p>Download the latest Time Chronicles installers for Windows, macOS, and Linux. Every file is hosted over HTTPS with its size and SHA-256 checksum.</p><div id="status" role="status" aria-live="polite"><strong>Checking the current release…</strong><span>Please wait.</span></div></section>
+  <nav aria-label="Operating systems"><a href="#windows" data-platform="windows">Windows</a><a href="#macos" data-platform="macos">macOS</a><a href="#linux" data-platform="linux">Linux</a></nav>
+  <div id="platforms" aria-live="polite"></div>
+  <section class="footer-note"><strong>Prefer the web app?</strong> Time Chronicles remains installable from your browser for lightweight offline local play. <a href="https://time-chronicles.vercel.app">Open Time Chronicles ↗</a><br />Machine-readable files: <a href="./desktop-releases.json">release manifest</a> · <a href="./updates/latest.json">updater manifest</a> · <a href="./changelog.json">changelog</a></section>
+</main>
+<script>
+  const platforms = ["windows","macos","linux"];
+  const labels = {windows:"Windows",macos:"macOS",linux:"Linux"};
+  const guidance = {
+    windows:{requires:"Windows 10 or 11",arch:"x64 · current user",install:["Download the NSIS installer.","Open it and follow the current-user setup.","Install or repair Microsoft Edge WebView2 if prompted."],update:"Close Time Chronicles and run the newest NSIS installer over your current copy.",security:"If SmartScreen appears, choose More info, verify this page's SHA-256, then choose Run anyway."},
+    macos:{requires:"macOS 10.15 or newer",arch:"Universal · Intel + Apple silicon",install:["Download and open the universal DMG.","Drag Time Chronicles to Applications.","Launch it from Applications."],update:"Open the newest DMG and replace the existing Applications copy.",security:"If Gatekeeper blocks first launch, Control-click the app, choose Open, and confirm after checking the checksum."},
+    linux:{requires:"64-bit Linux desktop",arch:"x64",install:["AppImage: mark executable and run.","Debian/Ubuntu: install the .deb.","Fedora/RHEL/openSUSE: install the .rpm."],update:"Replace the AppImage or install the newer DEB/RPM over the existing package.",security:"Your desktop may request run permission for AppImage. Verify its checksum before granting it."}
+  };
+  const detected=/Windows/i.test(navigator.userAgent)?"windows":/Macintosh|Mac OS X/i.test(navigator.userAgent)?"macos":/Linux/i.test(navigator.userAgent)&&!/Android/i.test(navigator.userAgent)?"linux":"";
+  document.querySelectorAll("[data-platform]").forEach(link=>{if(link.dataset.platform===detected){link.classList.add("detected");link.textContent+=" · detected"}});
+  const el=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node};
+  const formatSize=bytes=>`${(Number(bytes)/(1024*1024)).toFixed(1)} MB`;
+  function artifactCard(artifact,version){
+    const article=el("article","artifact"),copy=el("div"),title=el("strong","",artifact.label),detail=el("small","",`v${version} · ${String(artifact.format).toUpperCase()} · ${artifact.architecture} · ${formatSize(artifact.sizeBytes)}`),link=el("a","download",`Download ${String(artifact.format).toUpperCase()} ↗`),details=el("details"),summary=el("summary","", "SHA-256 checksum"),code=el("code","",artifact.sha256);
+    link.href=artifact.url;link.rel="noopener";copy.append(title,detail);details.append(summary,code);article.append(copy,link,details);return article;
+  }
+  function platformCard(platform,manifest,notes){
+    const info=guidance[platform],section=el("section",`platform ${detected===platform?"detected":""}`);section.id=platform;section.tabIndex=-1;
+    const head=el("header"),heading=el("div"),mark=el("span","detected-label",detected===platform?"DETECTED PLATFORM":"DESKTOP PLATFORM"),h2=el("h2","",labels[platform]),badge=el("span","platform-badge",`v${manifest.version}`);heading.append(mark,h2);head.append(heading,badge);
+    const facts=el("div","facts");[["Requires",info.requires],["Architecture",info.arch]].forEach(([name,value])=>{const fact=el("div","fact");fact.append(el("small","",name),el("strong","",value));facts.append(fact)});
+    const artifacts=el("div","artifacts");manifest.artifacts.filter(item=>item.platform===platform).forEach(item=>artifacts.append(artifactCard(item,manifest.version)));if(!artifacts.children.length)artifacts.append(el("p","", "No current installer is available for this platform."));
+    const guide=el("div","guidance"),install=el("article"),steps=el("ol");info.install.forEach(step=>steps.append(el("li","",step)));install.append(el("h3","", "Install"),steps);const update=el("article");update.append(el("h3","", "Update"),el("p","",info.update));const security=el("article");security.append(el("h3","", "Security warning"),el("p","",info.security));guide.append(install,update,security);
+    const whats=el("aside","whats-new"),copy=el("div");copy.append(el("strong","",`What's new in ${manifest.version}`),el("p","",notes));const changelog=el("a","", "Full changelog ↗");changelog.href="./changelog.json";whats.append(copy,changelog);
+    section.append(head,facts,artifacts,guide,whats);return section;
+  }
+  Promise.all([
+    fetch("./desktop-releases.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Release details are unavailable.");return r.json()}),
+    fetch("./changelog.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null)
+  ]).then(([manifest,changelog])=>{
+    if(manifest.status!=="available"||!Array.isArray(manifest.artifacts))throw new Error(manifest.message||"Desktop installers are not published yet.");
+    const status=document.querySelector("#status");status.replaceChildren(el("strong","",`Current desktop release · ${manifest.version}`),el("span","",manifest.message));
+    const latest=changelog&&Array.isArray(changelog.releases)?changelog.releases.find(item=>item.version===manifest.version):null;
+    const notes=latest&&Array.isArray(latest.details)?latest.details.join(" · "):"Five difficulty levels, clearer desktop updates, and a complete installer catalog.";
+    const target=document.querySelector("#platforms");platforms.forEach(platform=>target.append(platformCard(platform,manifest,notes)));
+  }).catch(error=>{const status=document.querySelector("#status");status.replaceChildren(el("strong","", "Downloads unavailable"),el("span","",error instanceof Error?error.message:"Release details are unavailable."));});
+</script>
+</body>
 </html>
