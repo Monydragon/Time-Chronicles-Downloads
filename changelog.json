@@ -1,6 +1,242 @@
 {
-  "currentVersion": "0.9.139",
+  "currentVersion": "0.9.160",
   "releases": [
+    {
+      "version": "0.9.160",
+      "date": "2026-09-02",
+      "title": "The timeline keeps moving",
+      "summary": "Successful placements can celebrate inline, desktop stakes are easier to read, and the player experience speaks more naturally.",
+      "details": [
+        "Successful placement popups remain available by default, but players can turn future success popups off from the reveal or Settings; misses, timeouts, handoffs, and final results still pause when they need attention.",
+        "The faster setting celebrates correct cards directly on the timeline with a check, visible score gain, and a small particle burst, then advances once after a readable 800-millisecond beat with a static reduced-motion path.",
+        "Desktop score rails now give points, streaks, and hearts more size, contrast, and active-player emphasis in local and online games without exposing hidden totals.",
+        "Home, setup, practice, gameplay, results, settings, decks, store, support, social, downloads, audio, and update copy now use a clearer game-night voice while sourced facts and trust-sensitive wording stay intact."
+      ]
+    },
+    {
+      "version": "0.9.159",
+      "date": "2026-09-01",
+      "title": "Every pack stays on theme",
+      "summary": "Weekly packs now prioritize cards related to their winning idea, How to Play becomes an animated practice table, and staff gain complete pack and promotional-access controls.",
+      "details": [
+        "Food on the Move and every future weekly winner now draw all matching-category cards first in deterministic order, using unrelated fallback cards only when the sourced catalog cannot fill fifty positions.",
+        "Every shipped deck is covered by the strict 50-card source and category audit, while staff can create managed packs or edit and publish an override for any built-in pack from Pack Studio.",
+        "How to Play is now a full, visible practice screen with a mock hand, placement slots, directional arrows, drag motion, reveal feedback, and reduced-motion support instead of a blocking tutorial popup.",
+        "Authorized staff can grant a pack to one player permanently or until a chosen expiration, or schedule labeled all-account pack promotions with optional start and end times; production and local multiplayer enforce the same live access rules."
+      ]
+    },
+    {
+      "version": "0.9.158",
+      "date": "2026-08-26",
+      "title": "Subscriber packs open online tables",
+      "summary": "Hosts can now use packs covered by a verified subscription, lifetime unlock, current-pack unlock, or individual pack purchase when creating and managing online rooms.",
+      "details": [
+        "Room creation and pack offers carry the device's private billing recovery proof to the server, where durable provider records—not client entitlement flags—determine pack access.",
+        "Active subscriptions, lifetime access, and verified current-pack support unlock every active catalog pack for online play, including Cryptids & Mysterious Events.",
+        "Verified individual pack purchases grant that exact pack online, while unknown and inactive packs remain unavailable unless explicitly purchased."
+      ]
+    },
+    {
+      "version": "0.9.157",
+      "date": "2026-08-26",
+      "title": "Online turns hold steady through the unknown",
+      "summary": "Hosted pack choices now survive setup and reconnects, network-retried card plays are idempotent, and fifty sourced cryptid and mystery moments join the catalog.",
+      "details": [
+        "Room creation carries the host's exact pack snapshot into the authoritative lobby and repairs a mismatched response before the table can start; locked selections now produce a clear error instead of silently becoming Foundations.",
+        "Automatic rejoin signals are consumed once, ending the host-side reconnect loop that could leave the waiting-room action stuck on Saving.",
+        "Each online placement keeps one durable request id across retries, so a move accepted before its response is lost is returned as the same move rather than appearing to revert or requiring a replay.",
+        "Cryptids & Mysterious Events adds 50 sourced cards spanning legendary creatures, strange signals, disappearances, investigations, and famous hoaxes."
+      ]
+    },
+    {
+      "version": "0.9.156",
+      "date": "2026-08-26",
+      "title": "Hosted tables keep their chosen packs",
+      "summary": "Pack selections now carry into online hosting and remain synchronized while the host adjusts the waiting room.",
+      "details": [
+        "Online host setup starts with the packs already selected by the player instead of resetting to Foundations.",
+        "The room's authoritative pack list is synchronized back to the player selection after creation and every pre-game host edit.",
+        "Selections that are unavailable for online play are safely filtered while valid unlocked packs remain selected."
+      ]
+    },
+    {
+      "version": "0.9.155",
+      "date": "2026-08-26",
+      "title": "Fire, motion, and companionship join the timeline",
+      "summary": "Volcano history, transportation milestones, and the story of household pets arrive as three new sourced packs.",
+      "details": [
+        "Fire Mountains adds 50 sourced cards spanning ancient eruptions, famous disasters, newborn islands, scientific breakthroughs, aviation hazards, and modern preparedness.",
+        "Wheels Through Time adds 50 sourced cards tracing transport from the first wheel and ancient roads through bicycles, cars, trains, ships, aircraft, spacecraft, and autonomous vehicles.",
+        "Furry & Feathered adds 50 sourced cards about dogs, cats, birds, rabbits, fish, and other companions across domestication, veterinary care, service, science, film, and internet culture.",
+        "All three packs are available in the player catalog, unlockable with points, highlighted as new releases, and projected into authoritative multiplayer rooms."
+      ]
+    },
+    {
+      "version": "0.9.154",
+      "date": "2026-08-24",
+      "title": "Three new stories arrive at the table",
+      "summary": "Toy-industry building history, food history, and cartoon milestones join the catalog alongside new-release discovery and a server-authorized custom pack creator.",
+      "details": [
+        "Brick by Brick, Food History, and Cartoon Milestones each add 50 sourced, unique cards with balanced difficulty and complete server-side multiplayer projections.",
+        "Built-in releases, weekly community winners, and staff-published packs now share one release clock: players see a one-time arrival popup, and packs remain highlighted at the top of catalog views for seven days.",
+        "The separate custom pack screen lets players configure and validate at least nine cards before saving; canceling the draft never spends points.",
+        "Verified supporters create custom packs without spending points, while other signed-in players use an atomic, idempotent 25-point server debit per new saved pack. Imports and edits remain free."
+      ]
+    },
+    {
+      "version": "0.9.153",
+      "date": "2026-08-24",
+      "title": "The timeline slider finds its moment",
+      "summary": "Dragging the long-timeline navigator now selects the matching card and scrolls it into view consistently in local and multiplayer games.",
+      "details": [
+        "Every range-slider movement updates the selected card immediately instead of waiting for a separate button action or leaving the board behind.",
+        "Local and multiplayer boards now share the same card-centering behavior, including smooth scrolling and the Reduce motion preference.",
+        "The chosen card keeps a visible selection outline after the brief arrival animation ends, making the slider position easy to confirm.",
+        "Horizontal navigation centers within the timeline while using the nearest vertical position, so finding a card no longer pulls the slider unnecessarily out of view."
+      ]
+    },
+    {
+      "version": "0.9.152",
+      "date": "2026-08-24",
+      "title": "Every message and every turn stays clear",
+      "summary": "Room chat now keeps notifications readable, sounds for new messages, brings direct mentions forward, labels card values, and holds multiplayer turns steady while a move is being saved.",
+      "details": [
+        "The collapsed room-chat dock now gives its notification indicator, label, status, and sound control enough space to remain readable on narrow phones.",
+        "New room messages play a dedicated chat cue, while an exact @room player name automatically opens an in-app alert for that player and can request an away notification; messages hidden by either player's block remain hidden.",
+        "Every playable hand card now shows its current value: points in score modes, tiebreak points in Survival, and streak progress in Streak mode, with Hard cards worth two and other difficulties worth one.",
+        "Online hands remain locked from the first placement request through any bounded network retry, preventing unrelated loading state and delayed polling from making a turn flash between playable and unavailable."
+      ]
+    },
+    {
+      "version": "0.9.151",
+      "date": "2026-08-24",
+      "title": "The changelog is always within reach",
+      "summary": "Quick Play difficulty and desktop release notes now stay accessible from Home and Downloads, with clear loading, offline, and retry states.",
+      "details": [
+        "Manual changelog access now loads the public release history on demand instead of depending on the delayed startup notice request.",
+        "The full changelog remains available even when automatic release notices are disabled, so staff notification settings never hide a player-requested history.",
+        "Loading, offline, and failed-request states are visible inside the accessible dialog, with a keyboard-friendly retry action."
+      ]
+    },
+    {
+      "version": "0.9.150",
+      "date": "2026-08-23",
+      "title": "The whole story at the finish",
+      "summary": "Host setup now has a dependable route back, and every completed game can review and replay its final timeline across desktop and mobile.",
+      "details": [
+        "The Back control inside the first Host setup step now returns to the multiplayer menu instead of appearing disabled; on later steps it continues to move backward through the wizard.",
+        "Solo, local, Chronicle challenge, and online result screens now show the full final timeline in chronological order with dates and the player responsible for each placement.",
+        "A player-controlled quick time-lapse reveals the final timeline event by event, with pause, continue, replay, and Show all now controls.",
+        "The expanded result card remains internally scrollable, stacks controls on narrow screens, and suppresses timeline transitions when Reduce motion is enabled."
+      ]
+    },
+    {
+      "version": "0.9.149",
+      "date": "2026-08-23",
+      "title": "Every turn arrives intact",
+      "summary": "Multiplayer turns now resist delayed polls and failed writes, while faster game and chat refreshes keep desktop and mobile tables visibly in sync.",
+      "details": [
+        "Room snapshots now carry a durable revision, and clients reject older asynchronous responses so a late poll cannot replace a newly completed turn.",
+        "Routine room polls no longer write the whole room; periodic liveness heartbeats and automatic turn transitions use compare-and-swap so they cannot overwrite a concurrent card placement.",
+        "A failed durable card write now rejects and reloads instead of appearing successful and disappearing later, while active room polling, room chat, and direct messages refresh faster without overlapping requests.",
+        "Turns no longer use an undocumented ninety-second skip: players advance automatically only when the host explicitly enables a turn timer or disconnected-player skip rule."
+      ]
+    },
+    {
+      "version": "0.9.148",
+      "date": "2026-08-23",
+      "title": "Hosts can reshape the table",
+      "summary": "Hosts can now change card packs and every room customization while the lobby is waiting, with the updated setup shared across desktop and mobile before the game begins.",
+      "details": [
+        "The host can reopen Room setup after creating a room and change the selected card packs, visibility, and room rules from one place.",
+        "Pack changes are applied to the authoritative room, refresh the card count and deck name for every player, and remain available even after the host marks ready while the room is still waiting.",
+        "Once play starts, the server locks all room customization so the active game's deck and rules cannot change underneath the players."
+      ]
+    },
+    {
+      "version": "0.9.147",
+      "date": "2026-08-23",
+      "title": "Chat takes the clear side",
+      "summary": "Room chat now docks on the left so the release, audio, and Customize controls stay visible on the right across desktop and mobile, with clean collapse behavior for every floating surface.",
+      "details": [
+        "Collapsed room chat stays in a bounded left-side dock instead of stretching beneath the right-side floating controls.",
+        "Open desktop chat reserves left-side board space; on narrow screens, open chat uses the available viewport while the right-side utility dock yields cleanly.",
+        "The release badge, audio control, Customize button, chat toggle, and card-detail modal remain independently accessible without covering one another."
+      ]
+    },
+    {
+      "version": "0.9.146",
+      "date": "2026-08-23",
+      "title": "Chat and details keep their space",
+      "summary": "Room chat and floating card details now stay out of each other’s way on desktop and mobile, with clearer collapse controls and viewport-safe panels.",
+      "details": [
+        "Opening card details raises the modal above the room chat and temporarily hides lower-priority floating controls so the story stays readable.",
+        "Expanded room chat yields the floating Customize dock, while its header clearly announces the collapse action and keeps the chat state easy to restore.",
+        "Card details and open chat respect safe areas, keyboard-sized viewports, and narrow widths without clipping their content."
+      ]
+    },
+    {
+      "version": "0.9.145",
+      "date": "2026-08-23",
+      "title": "Cards make room for the next chapter",
+      "summary": "Full placement animation now makes the timeline visibly push cards aside before the new card settles into its gap on desktop and mobile, with a device setting to turn the motion off and larger default placement targets.",
+      "details": [
+        "Dragging or choosing a card stages a full push-and-insert animation across local and online timelines before the existing authoritative placement is submitted.",
+        "Full placement animation is on by default, saved with accessibility preferences, and automatically yields to Reduce motion.",
+        "Timeline placement areas are a little wider on desktop and mobile and taller in vertical layouts, making gaps easier to hit."
+      ]
+    },
+    {
+      "version": "0.9.144",
+      "date": "2026-08-23",
+      "title": "A name that follows you into chat",
+      "summary": "Chat now uses the player name everywhere, lets players change it from the chat surface, and keeps the desktop release aligned while asking unnamed players for one before sending.",
+      "details": [
+        "Social chat and room chat now show an editable player name so messages use the same identity as the rest of Time Chronicles.",
+        "Opening room chat reconciles the durable player profile with the name used at that table before chat messages load.",
+        "Players without a name see a focused name setup panel when chat opens, and the composer stays locked until a name is saved."
+      ]
+    },
+    {
+      "version": "0.9.143",
+      "date": "2026-08-23",
+      "title": "A friendlier table on every phone",
+      "summary": "Room setup now keeps each difficulty and mode choice close to its explanation, advanced rules stay out of the way until needed, and mobile chat opens into a keyboard-safe composer without the utility controls covering it.",
+      "details": [
+        "Mobile room-rule cards no longer inherit a tall desktop flex basis, so labels, explanations, and controls stay together with comfortable spacing.",
+        "Core choices remain immediately visible while hand, reconnect, visibility, chat, and card-detail options move into a clearly labeled Advanced room rules section.",
+        "The mobile utility dock becomes one compact row with icon-sized audio and Customize controls, leaving more of the game and setup visible.",
+        "Room chat now focuses its text composer from the mobile chat action, follows visual-viewport keyboard changes, keeps 16-pixel input text to prevent browser zoom, and supports Enter to send.",
+        "Failed messages preserve their retry action without permanently disabling the composer, and the utility dock clears the screen while a player is typing."
+      ]
+    },
+    {
+      "version": "0.9.142",
+      "date": "2026-08-23",
+      "title": "A safer way to talk at the table",
+      "summary": "Moderated room chat, same-age-band friends and direct messages, and a private 13+ social gate bring conversation to online games without adding a paid chat provider, while Challenge Chronicle difficulty stays aligned at every width.",
+      "details": [
+        "Public, invite-only, and private online rooms now include filtered text chat with quick phrases, message retry states, blocking, reporting, deletion, and host channel controls.",
+        "The Social hub adds opaque friend codes, requests, friends, same-age-band direct messages, unread counts, blocking, safety guidance, and social-data deletion without public user search.",
+        "Birth month and year are evaluated on the server and discarded; under-13 players can keep playing while chat, friends, and direct messages remain unavailable.",
+        "Room messages expire after 7 days, direct messages after 30 days, and redacted moderation snapshots after 90 days, with durable rate limits and bounded channel history.",
+        "Staff moderation adds reviewed cases, message deletion, player warnings, timed or permanent social suspensions, audit entries, recent-MFA enforcement, and an immediate Social Chat kill switch.",
+        "Challenge Chronicle's difficulty row now stays aligned inside its panel and stacks cleanly at tablet, mobile, and enlarged-text widths."
+      ]
+    },
+    {
+      "version": "0.9.141",
+      "date": "2026-08-23",
+      "title": "Every pack has a place",
+      "summary": "Challenge Chronicle makes deck choice visible up front, keeps locked packs discoverable, and gives every pack a clear path to preview or unlock while Quick Play and the desktop release stay aligned.",
+      "details": [
+        "Challenge Chronicle now shows the full active pack catalog before Advanced rules & setup, so choosing a deck is part of the main setup flow.",
+        "Locked packs stay visible in the scrollable deck picker with All packs, Unlocked, and Locked filters; locked cards cannot be selected until they are unlocked.",
+        "Each locked pack promotes its theme, offers a date-safe preview, and links directly to a points unlock when ready or the full Deck Builder unlock path.",
+        "The narrow Customize panel now fills its available viewport cleanly, keeping theme controls and the internal scroll area usable on small screens.",
+        "The signed desktop web bundle and release identity are updated to 0.9.141."
+      ]
+    },
     {
       "version": "0.9.139",
       "date": "2026-08-22",
