@@ -1,6 +1,80 @@
 {
-  "currentVersion": "0.9.160",
+  "currentVersion": "0.9.167",
   "releases": [
+    {
+      "version": "0.9.167",
+      "date": "2026-09-25",
+      "title": "A clearer table for every player",
+      "summary": "Light and dark themes now stay readable, updates stay out of the way, and keyboard or controller play is ready.",
+      "details": [
+        "The refreshed Customize panel keeps its close button visible while you scroll, and color defaults stay correct when the device switches between light and dark mode.",
+        "What’s new opens on request with the latest release first and older updates behind Previous updates. New players no longer receive automatic announcement popups.",
+        "Menus and games accept arrow keys, Enter, Space, Escape, and standard browser gamepads.",
+        "The transfer page now uses the same Time Chronicles header and visual language as the game."
+      ]
+    },
+    {
+      "version": "0.9.165",
+      "date": "2026-09-25",
+      "title": "Plus is wired up and verified",
+      "summary": "The Store's Plus plans are connected end to end with setup checks that fail closed, and the changelog always finishes loading.",
+      "details": [
+        "Plus monthly, Plus annual, and Lifetime Plus now report as purchasable only when a real, mode-specific Stripe key is installed, so an example or placeholder value can never make the Store look open for business.",
+        "A new setup check verifies the Stripe account, every configured price, the signed webhook endpoint, and the customer portal before paid checkout is switched on, and names exactly what is still missing.",
+        "The subscription catalog documents and validates the annual plan alongside monthly and lifetime, including the staff price settings that quote every plan.",
+        "The changelog can no longer wait forever on \"Loading the latest changelog…\": every release-notes request now has a deadline and always reaches its content, or its clear retry state. Release notes also revalidate instead of serving a stale copy from the previous release.",
+        "Ownership rules stay the same: earned and individually purchased packs remain yours, Plus covers every released pack while it is paid, and Lifetime Plus keeps them permanently."
+      ]
+    },
+    {
+      "version": "0.9.164",
+      "date": "2026-09-25",
+      "title": "Staff invitations arrive safely",
+      "summary": "Staff invitations now survive refreshes, send through a durable email queue, and explain sign-in problems clearly.",
+      "details": [
+        "Invitation links move into a short-lived secure server session before the URL fragment is cleared, so refreshes and canceled Google sign-ins can be retried safely.",
+        "Account creation and invitation acceptance are transactional, pending usernames are reserved, and concurrent acceptance cannot create duplicate staff accounts.",
+        "Invitations send through encrypted queued email jobs with bounded retries, delivery status, secure copy-link fallback, resend rotation, and revoke controls.",
+        "Staff login now gives actionable messages for expired invitations, wrong accounts, canceled Google sign-ins, provider failures, and username conflicts."
+      ]
+    },
+    {
+      "version": "0.9.163",
+      "date": "2026-09-24",
+      "title": "Plus, your way",
+      "summary": "Choose free play, a flexible Plus plan, lifetime access, or a permanent pack purchase, with points still in play.",
+      "details": [
+        "Time Chronicles Plus is priced at $2.99 monthly, $24.99 yearly, or $59.99 once for lifetime access. Annual billing is about $2.08 per month, around 30% less than monthly.",
+        "Earn eligible released packs with the existing point system or buy a single pack permanently for $0.99. Earned and purchased packs stay yours if a subscription ends.",
+        "Paid purchases are prepared for verified Stripe Checkout, while existing subscriptions keep their current renewal price. Stripe purchases remain paused until provider tests, production setup, and launch checks are complete.",
+        "Weekly community releases keep their own permanent identity and retained content, so rotating the weekly selection does not replace an owned release.",
+        "Staff sales and subscription views add date ranges, personal saved views, financial totals and private CSV, XLSX and PDF reports. Billing management remains subject to release verification."
+      ]
+    },
+    {
+      "version": "0.9.162",
+      "date": "2026-09-17",
+      "title": "Welcome back to the staff table",
+      "summary": "Staff sign-in is restored after the move, gifts are easier to send, and room hosting gets leaner.",
+      "details": [
+        "Google staff sign-in now returns to the new website. Staff passwords, invitations, permissions, and authenticator checks remain protected.",
+        "Staff can check a guest recipient before giving points, a permanent pack, or a 1, 7, or 30-day pack trial. Players do not need a new login.",
+        "Room requests read their own table instead of scanning every room. Background housekeeping clears abandoned rooms even when the lobby is quiet.",
+        "Peer-hosting recovery and concurrent-room simulations have expanded coverage. Public peer tables remain disabled while relay and device testing are completed."
+      ]
+    },
+    {
+      "version": "0.9.161",
+      "date": "2026-09-17",
+      "title": "More room to play",
+      "summary": "A slimmer table, lasting heart containers, fresh cards through every chapter, and the Earliest First challenge.",
+      "details": [
+        "The desktop sidebar takes less space, while mobile tables and compact result views keep cards and the next action readable. Optional card details and final replays expand in place.",
+        "Lost hearts leave empty containers. Revealed and attempted cards never return during a game, including later Quick Play chapters.",
+        "Earliest First challenges you to choose the earliest year in your hand before placing it. Equal years can be played in either order, locally or online.",
+        "Desktop download links open once. Linux startup includes a compatibility fix for blank windows on affected graphics drivers."
+      ]
+    },
     {
       "version": "0.9.160",
       "date": "2026-09-02",
@@ -983,7 +1057,7 @@
       "details": [
         "A full-width community card on Home gives Discord a large, recognizable mark, clear invitation copy, and an easy-to-find Join on Discord action.",
         "A compact footer link keeps the community discoverable after players move past the main card.",
-        "The canonical Monydragon Services invite is https://discord.gg/S6wDMdnJw and is centralized for reuse by future staff settings.",
+        "The canonical Monydragon Services invite is https://discord.gg/Y9uubFArnF and is centralized for reuse by future staff settings.",
         "Every Discord link opens in a new tab with safe opener isolation and an explicit accessible name.",
         "Player copy identifies Discord as an external service and makes clear that the independently operated Monydragon Services community is not affiliated with or endorsed by Discord.",
         "Invite validation accepts only a bounded HTTPS discord.gg invite code and rejects lookalike hosts, credentials, ports, nested paths, query strings, fragments, backslashes, and encoded path tricks.",
