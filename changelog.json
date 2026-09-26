@@ -1,6 +1,18 @@
 {
-  "currentVersion": "0.9.167",
+  "currentVersion": "0.9.168",
   "releases": [
+    {
+      "version": "0.9.168",
+      "date": "2026-09-26",
+      "title": "The table stays in reach",
+      "summary": "Keyboard and controller play now move real focus and activate real game controls, while the timeline and hand share one compact play surface.",
+      "details": [
+        "Your first arrow or directional-pad press now enters the active hand or timeline, even when nothing had focus before.",
+        "Standard controllers use the same guarded actions as keyboard and pointer play, including region changes, a real game-menu action, held-input timing, and neutral reconnects.",
+        "Practice, local, and online tables keep the timeline, hand, and required actions together, with internal scrolling for longer timelines and hands.",
+        "Hidden tabs pause nonessential update, live-operations, support, and catalog refresh work while multiplayer recovery and turn state continue to use their existing safeguards."
+      ]
+    },
     {
       "version": "0.9.167",
       "date": "2026-09-25",
