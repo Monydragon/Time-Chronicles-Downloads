@@ -1,6 +1,81 @@
 {
-  "currentVersion": "0.9.168",
+  "currentVersion": "0.9.174",
   "releases": [
+    {
+      "version": "0.9.174",
+      "date": "2026-09-28",
+      "title": "More room for every card",
+      "summary": "Cards are easier to move and read on phones, room chat stays tucked below the table, and every device gets a clearer way to install.",
+      "details": [
+        "Drag a card directly from its body. A separate information button now stays in the top-right corner, while the point badge keeps its own space at top-left.",
+        "Timeline information buttons are anchored inside their cards, and room chat becomes a compact full-width drawer below the play surface on phones.",
+        "Home and Downloads now recognize Android, iPhone, iPad, Windows, macOS, and Linux, with the right install guidance or recommended desktop format shown first.",
+        "The first 50-card artwork research batch is ready for human review. Unapproved images are not published, so every pending card continues to use its existing category artwork."
+      ]
+    },
+    {
+      "version": "0.9.173",
+      "date": "2026-09-28",
+      "title": "The shared table stays steady",
+      "summary": "Multiplayer plays confirm sooner, and room chat now has a quiet dock that stays clear of the cards.",
+      "details": [
+        "Card moves now reach the shared room as soon as the placement animation begins, so a flourish cannot delay a move past its turn or lose a race with a timeout.",
+        "Older timeout and room responses can no longer roll a newer multiplayer board backward or show a timeout reveal for a card that landed.",
+        "Open room chat from the game header. The expanded conversation sits below the timeline and hand, while multiplayer games keep ads off the play surface.",
+        "Age setup asks players to choose a month and year instead of pre-filling a date that could mistakenly classify a 13-year-old as under 13."
+      ]
+    },
+    {
+      "version": "0.9.172",
+      "date": "2026-09-28",
+      "title": "A table closer to the vision",
+      "summary": "The Modern gameplay table brings portrait cards, parchment and a leather hand tray into a more balanced composition.",
+      "details": [
+        "The timeline sits directly on the map, with brass navigation and larger dashed placement targets when a card is selected.",
+        "Your hand uses taller cards, round value badges and a centered leather tray. Long titles remain readable.",
+        "Classic/Modern and version controls now take their own space in the header, so they cannot float over scores and hearts.",
+        "Classic customization and the whole-hand layout remain available. Official event illustrations are a separate work in progress."
+      ]
+    },
+    {
+      "version": "0.9.171",
+      "date": "2026-09-28",
+      "title": "A clearer table for every turn",
+      "summary": "The Modern gameplay table now gives the timeline and your whole hand a warmer, clearer place to play. Version and changelog controls stay close at hand.",
+      "details": [
+        "Modern gameplay uses a full-width parchment timeline, framed cards, a stitched leather hand tray and more readable scores and dates.",
+        "A single view-switch control in the gameplay top bar lets you move between Classic and Modern without ending the game.",
+        "The version number opens What’s new from the Modern Home and both gameplay views. The staff console also has a themed changelog control.",
+        "The whole-hand, touch, keyboard, controller and large-text fallback behavior remains in place. Individual event illustrations are still under editorial review."
+      ]
+    },
+    {
+      "version": "0.9.170",
+      "date": "2026-09-28",
+      "title": "A richer table, made for the moment",
+      "summary": "Modern Time Chronicles opens on a warm parchment table with leather panels, brass controls, and a rebuilt main menu. Your Classic table and its saved colors are still here whenever you want them.",
+      "details": [
+        "The Modern main menu brings the illustrated desktop and mobile designs to life, with a brass Quick Play control, stitched leather play panel, saved-run resume, and a community board.",
+        "Modern is now the default view, with curated parchment light and deep-leather dark appearances that follow your device when you choose System.",
+        "Switch between Modern and Classic from Home, Settings, or while you play. The switch only changes presentation, so your game, selected card, and editor draft stay put.",
+        "Cards and gameplay use the new framed treatment while keeping titles, clues, dates, controls, and screen-reader information as clear text. Individual historical card illustrations are coming in a later artwork release.",
+        "Custom cards can use library artwork or a PNG, JPEG, or WebP from your device. Images are normalized and kept in device storage; full deck exports carry the artwork with them.",
+        "The table still protects the whole hand: four standard cards and the timeline stay together, larger hands navigate inside their tray, and large text can always scroll instead of losing a card."
+      ]
+    },
+    {
+      "version": "0.9.169",
+      "date": "2026-09-26",
+      "title": "Your whole hand, back at the table",
+      "summary": "All four cards fit together on phones and desktops. Larger hands scroll with clear navigation, and the timeline stays within reach.",
+      "details": [
+        "The table makes room for your hand first, with two rows on phones and four cards across on larger screens.",
+        "Long timelines have a full overview and readable cards you can scroll or jump through.",
+        "Larger hands show a card range with Previous and Next controls, alongside normal scrolling.",
+        "Touch the card to select it, or use its Drag handle to move it. Ordinary swipes scroll without playing a card.",
+        "Menu holds Customize and audio settings; chapter details and advertisements stay below the playing area. Enlarged text and short screens can always scroll."
+      ]
+    },
     {
       "version": "0.9.168",
       "date": "2026-09-26",
