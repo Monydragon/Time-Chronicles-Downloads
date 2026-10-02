@@ -1,6 +1,125 @@
 {
-  "currentVersion": "0.9.174",
+  "currentVersion": "0.9.185",
   "releases": [
+    {
+      "version": "0.9.185",
+      "date": "2026-10-02",
+      "title": "Clearer staff navigation and current points",
+      "summary": "Reach every staff section on phones and desktops, see refreshed points when browsing packs, and use a roomier Support page.",
+      "details": [
+        "Staff navigation scrolls while close and sign-out stay reachable. The phone menu supports keyboard focus and Escape, and protected staff fields explain why they cannot be changed.",
+        "Deck Builder, Store and Support refresh your points on entry and when you return to the app. Loading and retry states distinguish checking from a saved balance.",
+        "Pack cards explain how many more points you need. Unlock errors appear beside the attempted pack, and the Store shows your balance near the top.",
+        "Support forms and offers use the available width. Community links, company information and legal links keep their own space.",
+        "Pack Studio distinguishes staff decks and overrides from built-in decks."
+      ]
+    },
+    {
+      "version": "0.9.184",
+      "date": "2026-10-01",
+      "title": "Staff access, passkeys and richer reporting",
+      "summary": "Manage staff invitations and access, use optional passkeys, and understand returning players, active time and social referrals.",
+      "details": [
+        "Staff invitations show honest mail delivery status and retry safely. Owners and admins can revoke eligible invitations, archive and restore staff, and remove credentials while retaining history.",
+        "Add a passkey for Face ID, fingerprint or device PIN in compatible mobile browsers and PWAs. Staff still complete authenticator 2FA.",
+        "Audience reporting adds sessions, new and returning players, active time, retention checkpoints, acquisition sources and CSV exports. Tracking starts with this release; older time is unavailable.",
+        "Social reporting supports authorized read-only channels and manual metric imports, with paid access disabled. Discord opens externally; private and room chat remain available.",
+        "An optional Patreon creator link appears on Home, Community and Support. Card category labels are more readable on phones and approved artwork resolves by card ID."
+      ]
+    },
+    {
+      "version": "0.9.183",
+      "date": "2026-10-01",
+      "title": "Clearer menus, navigation and identity review",
+      "summary": "Choose your Quick Play difficulty, visit the Community board, and use clearer controls across both views.",
+      "details": [
+        "Quick Play opens a difficulty menu; choosing a level starts one game. Community has its own page with weekly pack voting, suggestions and Discord.",
+        "Portrait headers, avatar frames, audio volume indicators, pack browsing, spacing and shared control corners are clearer in both views.",
+        "Browser Back closes supported popups and screen navigation has readable, credential-free URLs. Existing release history is grouped under Pre 1.0 and later major versions.",
+        "Report player names and profile pictures for staff review. Private server-hosted checks hold flagged identity changes while approved names and photos stay visible."
+      ]
+    },
+    {
+      "version": "0.9.182",
+      "date": "2026-09-30",
+      "title": "Your cards, clearer feedback",
+      "summary": "Device-aware installs, clearer text and gameplay feedback, provider accounts, personal artwork, moderated suggestions, and 90 more reviewed card images.",
+      "details": [
+        "Both home views offer Download & install with your device’s recommendation, the actual signed installer version, and visible choices for other devices.",
+        "Supporting text meets the 16px standard-size floor. Quick Play fills its area beside a separate difficulty selector, and inner-page branding stays readable.",
+        "Card details start with a short description. Correct placements celebrate with Combined, Confetti, Fireworks, or Off; reduced motion keeps static feedback. Misses compare your placement with the correct position before Continue reveals and scrolls to the marked no-points card.",
+        "Configured Google, Microsoft, and Discord providers can register, link, restore, and unlink independently. Native account sign-in uses the system browser and a one-use originating-app handoff.",
+        "Use your own art for built-in cards, preview or replace it, and restore the original. Guests keep images on-device; linked profiles sync private replacements with offline caching and conflict checks.",
+        "Submit art for everyone with creator, rights, source information, and consent. Staff reviews a frozen image and crop. Public suggestions and comments need approval, with one vote per profile.",
+        "The 90 approved research selections ship with exact original and crop checksums. Official coverage is now 140 of 1,200 built-in cards; newly researched artwork remains pending review."
+      ]
+    },
+    {
+      "version": "0.9.179",
+      "date": "2026-09-29",
+      "title": "One pack, three honest paths",
+      "summary": "The Store now opens with a price comparison, every locked pack lists its points price, its $0.99 purchase, and what Plus covers, and the Deck Builder can buy a pack without leaving the page.",
+      "details": [
+        "The Store opens with every way to open a pack side by side: earn it with points, buy it once for $0.99, or open all of them with Plus. The recommendation is computed from your own pack count, so it says plainly when buying is cheaper and when a month of Plus is.",
+        "Locked packs in the Store and in the Deck Builder show the same three paths and the same prices, and the buy button works in both places. Nothing is hidden behind a different screen.",
+        "The Store and Deck Builder text now meets the same accessible size floor as the rest of the interface, and their pack grids use one responsive layout so a phone and a desktop window show the same cards in the same order.",
+        "Prices, savings, and the point cost per pack all come from the live catalog. If a price changes, the comparison and the recommendation move with it."
+      ]
+    },
+    {
+      "version": "0.9.178",
+      "date": "2026-09-29",
+      "title": "See where a card goes",
+      "summary": "How to Play now puts the horizontal timeline first, with shorter directions and a clearer moving example.",
+      "details": [
+        "How to Play always introduces a left-to-right timeline, even when your own games use the vertical layout.",
+        "Shorter instructions keep the practice table in view sooner. Earlier dates are labeled on the left, later dates on the right, and the animated arrow and moving card make each suggested play easier to follow.",
+        "The practice table still uses real cards and the real game rules. Drag, tap, keyboard, and reduced-motion paths remain available."
+      ]
+    },
+    {
+      "version": "0.9.177",
+      "date": "2026-09-29",
+      "title": "Fifty faces, one honest timeline",
+      "summary": "Every Foundations card now carries real public-domain or CC0 artwork with its provenance, the vertical timeline lays out properly on a phone, the game has Terms & Conditions and a Privacy Policy for the first time, and the promotion campaign builds its card graphics from that same licensed art.",
+      "details": [
+        "All fifty Foundations cards now show real artwork. Each face is a public-domain or CC0 original from a museum, library, or archive — 29 under the Public Domain Mark, 14 CC0, and 7 under a Creative Commons attribution licence — recorded in the private manifest with its source page, creator, institution, licence, credit line, and checksums. The untouched originals stay in the ignored artwork tree, and every card ships a card and detail rendition under public/art/foundations/.",
+        "Attribution is a requirement here, not a courtesy: the seven CC BY records each carry a real credit line, drawn from the source itself rather than remembered, and the game shows it where a player can read it. `npm run artwork:approve` is the only path from a researched candidate to a shipped asset, and it refuses a source it cannot stand behind — an animated GIF is rejected rather than quietly shipping its first frame.",
+        "The vertical timeline lays out correctly on a phone. The modern stylesheet loads last, so its horizontal rules were winning and the board only flipped its direction while its children kept their horizontal sizing: a card 121 pixels wide at the left edge and both drop gaps stacked at the right. One stylesheet now owns the vertical shape, and the layout verifier covers six vertical scenarios that assert a column board, no sideways scroll, full-width cards and gaps, 44-pixel targets, and one real placement.",
+        "The game has Terms & Conditions and a Privacy Policy for the first time. Both are static pages, linked from the main menu, Settings, the Store footer, and Support, and both are rendered from docs/legal/ so the published text has one owner. Monydragon Services LLC of Okemah, Oklahoma is named as the operator, with Oklahoma law and venue.",
+        "The promotion campaign's card graphics are generated from that same licensed artwork, with each card's credit drawn into the image itself and a record carrying the creator, institution, licence, source page, and rendition. A draft can now name the exact file it attaches, and the campaign validator refuses a graphic that is missing from disk, uncredited, or attached to no draft at all.",
+        "The three featured menu cards are now bundled public-domain and CC0 originals — the 1903 first flight photographed by John T. Daniels, Alexander Graham Bell's 1876 big-box telephone from the Smithsonian, and Apollo 11 on the Moon — each fetched, rendered, and checksummed from the exact source recorded in its manifest, replacing the old generated composite.",
+        "Five more reading voices join the list — Cinzel, EB Garamond, IM Fell English, Spectral, and Alegreya Sans — and the antique serif is now the default for anyone who never chose a typeface. A device that already picked one keeps it.",
+        "On a phone the staff button becomes a full-width bar after the menu instead of floating over the Deck Builder tile and the footer's Settings row. Dropdowns across the app follow the theme rather than the browser default.",
+        "This release changes no placement rule, no score, and no saved game, and it ships on its own: nothing here is read by the 0.9.176 gameplay work."
+      ]
+    },
+    {
+      "version": "0.9.176",
+      "date": "2026-09-29",
+      "title": "Place it and keep playing",
+      "summary": "Every card now says what kind of moment it is, a correct placement celebrates on the board instead of interrupting the table, and How to Play became a real table you can practise on.",
+      "details": [
+        "Hand and timeline cards carry a category chip — Technology, Science, World, and the rest — so a card's kind is readable at a glance instead of hidden until the reveal.",
+        "A correct placement no longer stops the game. The card lands, the points and the date appear inline, and a short brass-and-parchment celebration plays while the table keeps moving. The full detail screen is reserved for misses, where it shows the category, the real date, and what the moment actually was.",
+        "Successful-placement popups are off by default. The first time a placement celebrates, a one-time note offers to bring the full reveal back, and the Settings switch does the same thing for anyone who looks for it there.",
+        "How to Play is a working practice table: the real cards, the real gaps, and the real rules. An arrow and a travelling ghost card point at the gap, and three guided placements teach selecting a card, reading the years, and filling the gap in the middle.",
+        "The information button on a hand card is a bordered ring sized to the card's own text, still inside a full 44-pixel touch target."
+      ]
+    },
+    {
+      "version": "0.9.175",
+      "date": "2026-09-29",
+      "title": "A missed card still tells the story",
+      "summary": "A card that misses now stays on the timeline where history put it, your name and avatar are yours to choose, accounts stay optional, and Plus is offered gently instead of pushed.",
+      "details": [
+        "Place a card in the wrong spot and it no longer disappears. It stays on the timeline at the year it belongs to, crossed out and greyed, and it never counts toward anyone's score.",
+        "A new profile page lets you edit your display name, choose from twelve built-in emblems, or upload a small profile photo, as a guest or with an account.",
+        "Google accounts are optional. Linking attaches an account to the profile this device already owns, and signing in on another device restores that same profile without signing out the first one. Points, packs, and unlocks are never moved, copied, or reset.",
+        "Free players now see a quiet invitation to Plus after a few games, when a new weekly pack lands, or after a stretch of active play. \"Not now\" is always a full answer, and staff set the thresholds.",
+        "Staff sign-in moved to a small gear button in the bottom-right corner, so the main menu is just for playing."
+      ]
+    },
     {
       "version": "0.9.174",
       "date": "2026-09-28",
