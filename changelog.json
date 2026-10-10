@@ -1,6 +1,81 @@
 {
-  "currentVersion": "0.9.185",
+  "currentVersion": "0.9.191",
   "releases": [
+    {
+      "version": "0.9.191",
+      "date": "2026-10-08",
+      "title": "Room for every mobile card",
+      "summary": "Mobile cards keep their full titles and bottom padding, with reliable scrolling when the table needs more room.",
+      "details": [
+        "The play area scrolls naturally when a full hand needs more space, including larger text and longer titles.",
+        "The bottom row keeps breathing room below the cards. Available height updates when browser or utility controls change.",
+        "Larger hands retain their own scrolling, paging and card index. Desktop downloads remain 0.9.185."
+      ]
+    },
+    {
+      "version": "0.9.190",
+      "date": "2026-10-08",
+      "title": "Responsive tables and complete core artwork",
+      "summary": "Mobile gameplay fits the screen, larger hands are easy to browse, and all five free packs have verified artwork.",
+      "details": [
+        "Portrait phone hands show two columns and two complete rows at default text size. Larger hands have native scrolling, Previous/Next controls and a title index.",
+        "Swipe a card body to browse, tap to select, or use its separate drag handle. Enlarged text can scroll the page while extra cards stay browsable in the hand.",
+        "Modern and Classic player screens pass phone, tablet and desktop browser checks. Explanations and ten-second recaps remain available below the play area.",
+        "All 250 cards in the five free packs now have verified CC0 or public-domain artwork and 500 renditions; overall coverage is 402 cards and 804 renditions. All 344 earlier approvals and image bytes are preserved.",
+        "Correct the unsupported 1997 influenza mRNA trial claim to the primary-record H10N8 trial start in December 2015. Stable card IDs stay unchanged.",
+        "Primary evidence corrects the cellular-network launch date, distinguishes TikTok’s international launch from Douyin, and qualifies Baghdad’s traditional papermaking date. Desktop downloads remain 0.9.185."
+      ]
+    },
+    {
+      "version": "0.9.189",
+      "date": "2026-10-07",
+      "title": "Quick context and time to read",
+      "summary": "Read short explanations in the game and keep success feedback visible while you play on.",
+      "details": [
+        "Selected cards show brief context with their dates protected until reveal.",
+        "Correct and missed placements explain the moment directly in the game. Wiki links remain optional.",
+        "Success recaps stay for ten seconds without delaying the next turn. Hover or focus to keep reading, open full card details, or dismiss when ready.",
+        "Both gameplay views and practice use bundled explanations that work offline. Existing popup preferences and room privacy settings still apply."
+      ]
+    },
+    {
+      "version": "0.9.188",
+      "date": "2026-10-04",
+      "title": "Roomier chat and easier multiplayer",
+      "summary": "Chat keeps your age setup, rooms are easier to find and share, and timeline placements have more room to land.",
+      "details": [
+        "Room chat and audio controls have their own space in Modern and Classic. Mobile layouts keep the board, forms and dialog actions reachable.",
+        "Multiplayer opens on public rooms. Hosting expands when you need it, with locked packs and verified unlock or purchase options beside the selection.",
+        "Shared game links include the room code and join after your name is ready. Passwords and room access rules still apply.",
+        "Select a hand card, then tap or drag onto either half of a timeline card to place before or after it. Information buttons keep their own action.",
+        "Restore the 0.9.186 preparation notes in release history. Nearby and native feature publication remain pending."
+      ]
+    },
+    {
+      "version": "0.9.187",
+      "date": "2026-10-04",
+      "title": "More approved card artwork",
+      "summary": "New historical artwork brings coverage to 344 cards across nine decks. Sourcing continues for the remaining cards.",
+      "details": [
+        "Add 204 approved card images, with card and detail views, while preserving the previous 140 images.",
+        "Foundations, Fire Mountains and Wheels Through Time now each have artwork for all 50 cards.",
+        "New selections use individually verified public-domain or CC0 sources and preserve provenance and cropping limitations. Existing attribution remains available.",
+        "Artwork coverage is 344 of 1,200 cards; 856 remain to be sourced. Nearby Wi-Fi and Bluetooth work remains in preparation."
+      ]
+    },
+    {
+      "version": "0.9.186",
+      "date": "2026-10-03",
+      "title": "Nearby rooms and reviewed artwork — preparation",
+      "summary": "Preparation checkpoint, not a published release. Offline Wi-Fi and Bluetooth tables and catalog artwork were being prepared while production was on 0.9.185.",
+      "details": [
+        "Fire Mountains now has all 50 reviewed images. Nine exact selections were human-approved, bringing total artwork coverage to 149 of 1,200 cards; remaining decks are still being sourced and reviewed.",
+        "Nearby adds Wi-Fi and Bluetooth choices. Wi-Fi uses one native host and a game-only local browser client for up to 32 players. Browser guests open a QR link or local address.",
+        "Room actions use authenticated seats and durable receipts. The same host restores committed seats and turns, with timers paused during host loss. Offline matches award no account points.",
+        "The Android Bluetooth service uses per-recipient views and bounded fragmented delivery. Physical host-model capacity acceptance is still required before Bluetooth hosting is enabled.",
+        "Signed native downloads, complete artwork review, physical offline acceptance and production publication remain pending."
+      ]
+    },
     {
       "version": "0.9.185",
       "date": "2026-10-02",
