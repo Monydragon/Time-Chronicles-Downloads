@@ -1,6 +1,208 @@
 {
-  "currentVersion": "0.9.191",
+  "currentVersion": "0.9.210",
   "releases": [
+    {
+      "version": "0.9.210",
+      "date": "2026-10-21",
+      "title": "Roomier mobile game header and reachable cards",
+      "summary": "Keep every game control and the release version readable on phones, with a hand panel that exposes every card above the bottom edge.",
+      "details": [
+        "Mobile game navigation wraps cleanly instead of running into adjacent controls. Menu, exit, player controls, interface switch, and the complete release version stay visible.",
+        "The board uses the measured wrapped header height and the visible phone space. Safe-area padding keeps the lower hand clear of the device edge.",
+        "The hand keeps readable two-column cards. Its first row remains visible, and the remaining cards scroll fully into view."
+      ]
+    },
+    {
+      "version": "0.9.209",
+      "date": "2026-10-21",
+      "title": "Clearer menus and smoother card placement",
+      "summary": "Secondary links keep readable colors, and cards now follow the pointer cleanly into a steady timeline gap.",
+      "details": [
+        "Transfer, project, and legal links in More options use clear parchment and ink colors, with visible keyboard focus in Modern view.",
+        "Card previews track the pointer in a single animation frame, ease back after invalid drops, and settle briefly after a placement. Reduced-motion settings skip the animation.",
+        "Card placement still works with a tap or keyboard. Multiplayer continues to confirm moves through the room server."
+      ]
+    },
+    {
+      "version": "0.9.208",
+      "date": "2026-10-20",
+      "title": "Play without a clock by default",
+      "summary": "Single-player games start without a timer, while multiplayer keeps a flexible 60-second turn clock.",
+      "details": [
+        "Quick Play and single-player setup start with the clock off. Turn clocks and chess clocks remain optional selections.",
+        "Multiplayer games start with a 60-second per-turn clock, which hosts can turn off or change. Chess clocks remain available."
+      ]
+    },
+    {
+      "version": "0.9.207",
+      "date": "2026-10-20",
+      "title": "Clearer turns and fairer multiplayer",
+      "summary": "See whose turn it is, track every player, and choose per-turn or chess clocks for fairer play.",
+      "details": [
+        "New games start with a 60-second turn timer. Chess clocks give each player a five-minute bank by default, with 1-, 3-, and 10-minute options.",
+        "Multiplayer games balance starting hands, lock the roster after play begins, and finish a target-score round for every eligible player. Exact ties share the win.",
+        "A live player roster shows each participant’s status, score and clock. Chronicle is identified as AI, and online placements appear immediately while the server confirms the move.",
+        "Shared Lucide icons, labeled navigation, turn banners, and a clearer back, exit, and leave-room flow improve the table on phones and computers."
+      ]
+    },
+    {
+      "version": "0.9.206",
+      "date": "2026-10-20",
+      "title": "Matching table colors on every screen",
+      "summary": "Desktop cards and timeline controls now use the same warm parchment and leather palette as mobile.",
+      "details": [
+        "Hand cards, timeline cards, category labels, point badges and information controls share matching surface and text colors.",
+        "Desktop timeline navigation uses the same readable surfaces as mobile in both presentations. Desktop card sizing, artwork and placement controls remain available."
+      ]
+    },
+    {
+      "version": "0.9.205",
+      "date": "2026-10-20",
+      "title": "Clearer staff tools on every screen",
+      "summary": "Get useful staff summaries, searchable player and billing records, compact mobile controls, and safer account management.",
+      "details": [
+        "Overview and Analytics show time-bounded activity with comparisons and expandable growth charts. Player, room, support, billing, and audit views use compact search and management controls.",
+        "Staff can review player device details only when players opt in, grant or revoke audited Plus access, and manage account status, packs, points, and moderation with explicit reasons.",
+        "Messages support private notes and context references. Copy-and-open drafting keeps context on this device until staff explicitly paste it into a provider; published messages contain only approved public fields.",
+        "Staff security adds unique username editing and recovery-code downloads. 0.9.200 card palettes and textures are documented below as a rolled-back release; they are not part of the current release."
+      ]
+    },
+    {
+      "version": "0.9.204",
+      "date": "2026-10-20",
+      "title": "Staff tools follow your saved theme",
+      "summary": "Staff tools now use the device’s saved Time Chronicles theme and presentation, with readable staff surfaces in both views.",
+      "details": [
+        "The staff console follows your saved light, dark, or system theme, including the selected game palette and custom colors.",
+        "Staff tools follow the player presentation until you choose a separate staff view; switching views updates the console immediately.",
+        "Staff buttons, navigation, dialogs, controls, and keyboard focus retain readable contrast across both presentations."
+      ]
+    },
+    {
+      "version": "0.9.203",
+      "date": "2026-10-18",
+      "title": "Clearer staff tools and one-time ad removal",
+      "summary": "Choose permanent ads-only removal, with no subscription. Staff can find registered and guest profiles and support players more easily.",
+      "details": [
+        "Store and Support offer configurable permanent ad removal separately from Plus and pack purchases. Existing subscriptions are not canceled by this purchase.",
+        "Staff screens have readable light and dark colors, clear button states and visible keyboard focus.",
+        "The staff Players directory includes saved guests and registered profiles, with search, access details, support history and audited ad-free grants. The overview highlights support, moderation and billing work."
+      ]
+    },
+    {
+      "version": "0.9.202",
+      "date": "2026-10-18",
+      "title": "A clearer start, a smoother collection",
+      "summary": "Find Quick Play sooner, see one heart allowance, and get clear pack checkout feedback.",
+      "details": [
+        "Quick Play uses the same difficulty rules on phones and computers. The solo table shows one heart allowance instead of repeated rows.",
+        "Pack purchases show progress and errors where you start them. Checkout opens in the current browser tab, and Store and Deck Builder agree on released locked packs.",
+        "Quick Play sits above optional mobile menu content. Points show a checking or retry state until their balance is verified."
+      ]
+    },
+    {
+      "version": "0.9.201",
+      "date": "2026-10-15",
+      "title": "A complete horizontal card table",
+      "summary": "Keep complete cards visible with a compact desktop table and a horizontal timeline.",
+      "details": [
+        "Desktop cards use content-sized faces and compact contain-fit artwork in Modern and Classic. Smaller windows and enlarged text keep readable scrolling instead of clipping card bottoms.",
+        "The timeline always runs left to right. Vertical layout controls are removed and previously saved vertical preferences return to horizontal.",
+        "Card selection, dragging, tap placement and independent information buttons remain available."
+      ]
+    },
+    {
+      "version": "0.9.200",
+      "date": "2026-10-15",
+      "title": "Your cards, in full color — rolled back",
+      "summary": "The 0.9.200 candidate added complete desktop cards and personal card palettes, colors, and textures. It was rolled back at the owner's request after desktop play broke; it is not live.",
+      "details": [
+        "The candidate added Archive, Sapphire, Forest, Burgundy, and Slate card palettes, with custom frame, reading-panel, text, and metallic-trim colors; parchment, leather, linen, or no texture; and optional category frame colors.",
+        "Card appearance was saved on the device and shared by Modern and Classic, with contrast correction for readable text. The candidate also adjusted desktop card sizing and artwork frames.",
+        "The owner reported that desktop play broke, so production was restored to 0.9.199. The failure's root cause is unconfirmed and 0.9.200 must not be reactivated."
+      ]
+    },
+    {
+      "version": "0.9.199",
+      "date": "2026-10-15",
+      "title": "Artwork returns to the timeline",
+      "summary": "See each moment on your mobile timeline, with complete images and a polished desktop hand.",
+      "details": [
+        "Mobile timeline cards show their category, information button, artwork and revealed date. Your hand stays compact, and card information keeps the complete picture and description.",
+        "Desktop hand cards have framed artwork above their description for a familiar card-table feel in Modern and Classic.",
+        "Images keep their full framing. Missing artwork shows “Add your art,” and smaller screens keep readable scrolling and separate information controls."
+      ]
+    },
+    {
+      "version": "0.9.198",
+      "date": "2026-10-15",
+      "title": "A mobile table that fits and flows",
+      "summary": "Keep your hand and timeline together, with compact text-led cards and direct touch placement.",
+      "details": [
+        "Portrait phones show a two-column hand below the timeline; landscape phones show them side by side. Larger hands and enlarged text keep readable scrolling fallbacks.",
+        "Artwork and descriptions stay available in card information while mobile hand, timeline and drag faces show full titles, category and points. The practice table teaches the same controls.",
+        "Drag any card directly, or tap a card then a gap. Clear selection, insertion and success feedback keep play moving without changing your popup preferences.",
+        "Mobile category labels stay on one line; category selectors scroll within their own row."
+      ]
+    },
+    {
+      "version": "0.9.197",
+      "date": "2026-10-14",
+      "title": "Swipe, drag and readable cards",
+      "summary": "Choose swipe browsing or a readable card grid, with clearer text throughout Modern and Classic.",
+      "details": [
+        "Swipe left or right to browse a focused mobile card, then drag upward or tap to place it. Choose Grid to scroll through all cards, tap one and drag it or tap a timeline gap.",
+        "Mobile browsing remembers your choice and focused card, keeps controls compact, and never plays a card while browsing.",
+        "Card faces and screen panels use matching foreground and background colors in light, dark and high-contrast themes, including selected cards and missing-artwork frames."
+      ]
+    },
+    {
+      "version": "0.9.195",
+      "date": "2026-10-14",
+      "title": "Readable cards and mobile browsing",
+      "summary": "Complete card text above artwork, larger information buttons and a full-width mobile hand browser.",
+      "details": [
+        "Modern and Classic show complete card titles and descriptions above contain-fit artwork, with category beside points at the top and larger information controls.",
+        "Phones browse one complete hand card at a time using Previous, Next and a title picker without playing a card.",
+        "Missing artwork shows a neutral template card with an Add art invitation."
+      ]
+    },
+    {
+      "version": "0.9.194",
+      "date": "2026-10-14",
+      "title": "Fuller cards and a roomier Menu",
+      "summary": "Desktop cards look and feel like cards, with complete artwork, clear point badges and an easier Menu.",
+      "details": [
+        "Modern and Classic desktop tables show taller portrait cards with complete images in square artwork frames. Smaller screens keep compact cards and complete images.",
+        "Placement points have a medallion badge. Card information returns to the upper-right corner, with the card number on the left.",
+        "Menu opens within the screen without shrinking the table. Its heading, tabs and close button stay visible while settings scroll; Escape returns you to play.",
+        "The missing 0.9.192 card art sourcing tooling entry is restored in version history."
+      ]
+    },
+    {
+      "version": "0.9.193",
+      "date": "2026-10-14",
+      "title": "Pick up the whole card",
+      "summary": "Drag anywhere on a card, follow its full face, and scroll the timeline while choosing a place.",
+      "details": [
+        "Card information sits at the top left, points at the top center, and the card number at the top right. The separate drag button is gone.",
+        "How to Play accepts real dragging. Timeline edges scroll while you hold a card, including vertical tables and longer histories.",
+        "Challenge Chronicle keeps difficulty and packs close to Start, with Advanced settings available. Pack-loading and selection problems explain how to retry or use Foundations.",
+        "Above Casual, opening an unplayed card’s fact source asks first and forfeits that card’s placement points. Other points stay safe, including after a saved game resumes."
+      ]
+    },
+    {
+      "version": "0.9.192",
+      "date": "2026-10-11",
+      "title": "Card art sourcing tooling integration",
+      "summary": "A local Windows artwork tool connects candidate discovery, crop review and verified artwork application.",
+      "details": [
+        "Discover individually eligible artwork candidates and compare the retained original with both exact card and detail crops.",
+        "Record human review of historical relevance, rights and framing before applying selections. Source or crop changes invalidate approval.",
+        "Saved reviews and cached previews resume locally. Checked application preserves existing approvals and recovers interrupted operations.",
+        "This was a tooling release; it did not publish a new game application or desktop installer."
+      ]
+    },
     {
       "version": "0.9.191",
       "date": "2026-10-08",
