@@ -1,6 +1,53 @@
 {
-  "currentVersion": "0.9.210",
+  "currentVersion": "0.9.214",
   "releases": [
+    {
+      "version": "0.9.214",
+      "date": "2026-10-23",
+      "title": "Early Access, easier feedback and desktop updates",
+      "summary": "Help shape Time Chronicles with quick in-game feedback, two Discord communities and direct desktop updates.",
+      "details": [
+        "Early Access labels and a short Home invitation make the current stage clear.",
+        "Report problems, suggest improvements, or share what you liked and disliked without leaving your game. Drafts and offline delivery are supported.",
+        "Join Monydragon Services or The Dragon’s Den from Home and feedback.",
+        "Desktop clients check at startup, hourly and after reconnecting. Download signed updates inside the app, then choose Install and restart when your game is finished.",
+        "Existing desktop clients need one manual upgrade to gain in-app installation. DEB/RPM installations continue through their package manager."
+      ]
+    },
+    {
+      "version": "0.9.213",
+      "date": "2026-10-23",
+      "title": "Correct timeline ordering after misses",
+      "summary": "New games judge placements against every visible timeline card, keeping later cards in chronological order after a miss.",
+      "details": [
+        "Missed cards now count as visible neighbors when judging a placement in new games and rematches.",
+        "Correct cards stay in the selected gap; missed cards move to their chronological position without earning points.",
+        "Existing saved games and rooms retain their original rules. Start a new game or rematch to use the fix."
+      ]
+    },
+    {
+      "version": "0.9.212",
+      "date": "2026-10-23",
+      "title": "Reliable cards and room chat",
+      "summary": "Online tables keep your chosen card, placement and turn together, with working room chat and clearer connection status.",
+      "details": [
+        "Chat sends by button, Enter and quick reply without a false refresh warning.",
+        "New rooms require the updated client and protect each placement against stale turns, changed gaps and duplicate retries.",
+        "Correct placements stay in the chosen gap, including matching years. Missing gaps and reconnect recovery are repaired.",
+        "Empty rooms leave public discovery promptly while saved seats remain recoverable."
+      ]
+    },
+    {
+      "version": "0.9.211",
+      "date": "2026-10-22",
+      "title": "Readable desktop practice and matching notices",
+      "summary": "How to Play keeps its desktop example card readable, and notifications follow the selected theme.",
+      "details": [
+        "The desktop practice hand shows one centered, complete card with a compact panel.",
+        "Notification backgrounds and text use matching theme colors in Modern and Classic, including dark mode.",
+        "Mobile practice controls and card layouts stay as they are."
+      ]
+    },
     {
       "version": "0.9.210",
       "date": "2026-10-21",
