@@ -1,6 +1,17 @@
 {
-  "currentVersion": "0.9.214",
+  "currentVersion": "0.9.215",
   "releases": [
+    {
+      "version": "0.9.215",
+      "date": "2026-10-23",
+      "title": "Keep the card you chose",
+      "summary": "Android touch selection now stays on the card you tapped, including when the hand scrolls.",
+      "details": [
+        "Android’s follow-up click can no longer select a different card after the hand scrolls or a card is placed.",
+        "Selection and placement controls pause during the short placement animation, keeping the committed card visible.",
+        "Delayed placements cannot carry into a different game or turn. The fix applies to browsers and installed PWAs in both presentations. Gameplay rules remain at 213."
+      ]
+    },
     {
       "version": "0.9.214",
       "date": "2026-10-23",
