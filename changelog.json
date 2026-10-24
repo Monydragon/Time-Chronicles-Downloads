@@ -1,6 +1,15 @@
 {
-  "currentVersion": "0.9.216",
+  "currentVersion": "0.9.217",
   "releases": [
+    {
+      "version": "0.9.217",
+      "date": "2026-10-24",
+      "title": "Restore the Modern desktop tabletop",
+      "summary": "The Modern desktop view now keeps its parchment background instead of exposing a pale blank canvas.",
+      "details": [
+        "The Modern light and dark table backgrounds are applied after the shared root surface, so they remain visible in the desktop WebView and in web browsers."
+      ]
+    },
     {
       "version": "0.9.216",
       "date": "2026-10-24",
