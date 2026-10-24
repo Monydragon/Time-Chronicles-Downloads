@@ -1,6 +1,19 @@
 {
-  "currentVersion": "0.9.215",
+  "currentVersion": "0.9.216",
   "releases": [
+    {
+      "version": "0.9.216",
+      "date": "2026-10-24",
+      "title": "Clearer misses and easier support",
+      "summary": "See who missed a move, expand the player panel, and review AI-assisted ticket and card updates.",
+      "details": [
+        "AI and player miss notices identify who played, show the revealed card and consequence, and offer Continue with detailed placement review.",
+        "The multiplayer desktop player panel is wider, wraps long text, and remembers whether you collapsed it.",
+        "Staff can move from analytics and related tickets to cited card corrections, historical artwork crops, and reviewed replies and resolutions.",
+        "An optional paired Windows worker uses local Ollama without paid AI APIs. Staff approval is required before content, replies, or ticket resolutions are applied.",
+        "Artwork research retains originals and both exact crops, with explicit rights and replacement review. Gameplay rules remain at 213."
+      ]
+    },
     {
       "version": "0.9.215",
       "date": "2026-10-23",
