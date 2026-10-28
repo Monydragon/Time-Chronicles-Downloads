@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "status": "available",
   "channel": "stable",
-  "version": "0.9.217",
-  "publishedAt": "2026-10-24T21:56:14.000Z",
+  "version": "0.9.219",
+  "publishedAt": "2026-10-28T23:14:00.000Z",
   "message": "Time Chronicles desktop installers are available. Operating systems can still show security warnings for independently distributed applications.",
   "pwaFallbackUrl": "https://timechronicles.monydragon.com",
-  "artifactBaseUrl": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.217",
+  "artifactBaseUrl": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.219",
   "artifacts": [
     {
       "platform": "linux",
       "architecture": "x64",
       "format": "appimage",
       "label": "Linux x64 AppImage",
-      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.217/Time.Chronicles_0.9.217_amd64.AppImage",
-      "sha256": "b16a082020d883dc1067b0b774316739680f1f6c9192989c9014dbde1987ee6d",
+      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.219/Time.Chronicles_0.9.219_amd64.AppImage",
+      "sha256": "fcec2f2c51fc9275f200f2b0612c7597d7b4e84fb479678ce11714dbcc71b103",
       "sizeBytes": 189553144
     },
     {
@@ -22,36 +22,36 @@
       "architecture": "x64",
       "format": "deb",
       "label": "Linux x64 Debian package",
-      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.217/Time.Chronicles_0.9.217_amd64.deb",
-      "sha256": "6032fed999ff484ecdfcc172e5f0a4a30cb48d047ffbd5bd6c1c798b4b2f1802",
-      "sizeBytes": 100176432
+      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.219/Time.Chronicles_0.9.219_amd64.deb",
+      "sha256": "e584e70d0b368a28b9f767413b61f9b6b79c59d8b23d5b1885173c0d114811a1",
+      "sizeBytes": 100176618
     },
     {
       "platform": "macos",
       "architecture": "universal",
       "format": "dmg",
       "label": "macOS universal disk image",
-      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.217/Time.Chronicles_0.9.217_universal.dmg",
-      "sha256": "2a4e6c0fab827252b2ae76e24d80df3f2cd30e1a98b57f3bce15293ea2ef997d",
-      "sizeBytes": 200415123
+      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.219/Time.Chronicles_0.9.219_universal.dmg",
+      "sha256": "89a9d8f5177b12f32733944112c32b4b26064786848ded2dbc73ce5434224bf7",
+      "sizeBytes": 200416804
     },
     {
       "platform": "windows",
       "architecture": "x64",
       "format": "nsis",
       "label": "Windows x64 setup",
-      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.217/Time.Chronicles_0.9.217_x64-setup.exe",
-      "sha256": "bbff4faef4e07b5d1e9ab9907402a6a02f9ad3ecbdf6e8af472f3cedbcdaab48",
-      "sizeBytes": 100414027
+      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.219/Time.Chronicles_0.9.219_x64-setup.exe",
+      "sha256": "7c0b4505f6fa061f7d60e051ec42961befcd8e6864b9c669ce710d14859fc85b",
+      "sizeBytes": 100411290
     },
     {
       "platform": "linux",
       "architecture": "x64",
       "format": "rpm",
       "label": "Linux x64 RPM package",
-      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.217/Time.Chronicles-0.9.217-1.x86_64.rpm",
-      "sha256": "b9b3c35c6cfd8a4f3c55aca524c88e509b7a7b36c2a2fb1ceadb1e877b40393c",
-      "sizeBytes": 100177303
+      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.219/Time.Chronicles-0.9.219-1.x86_64.rpm",
+      "sha256": "622b98f48a9de030cbd1919b7458eeef5f811cbbddccdc246fcc7d6250f43604",
+      "sizeBytes": 100177445
     }
   ]
 }

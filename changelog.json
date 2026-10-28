@@ -1,6 +1,27 @@
 {
-  "currentVersion": "0.9.217",
+  "currentVersion": "0.9.219",
   "releases": [
+    {
+      "version": "0.9.219",
+      "date": "2026-10-28",
+      "title": "Desktop multiplayer update",
+      "summary": "Updated desktop clients include the latest multiplayer sign-in recovery.",
+      "details": [
+        "Windows, macOS and Linux builds include the rejected-player-token hosting, joining and reconnect recovery from 0.9.218.",
+        "Existing accounts, updater signing keys and rules 213 remain unchanged."
+      ]
+    },
+    {
+      "version": "0.9.218",
+      "date": "2026-10-28",
+      "title": "Multiplayer sign-in recovery",
+      "summary": "Host and join tables again when this browser has an outdated player sign-in.",
+      "details": [
+        "Rejected saved credentials are checked against this device’s existing profile issuance and multiplayer retries once with verified credentials.",
+        "Linked accounts keep their saved identity and table setup. When sign-in is needed, Open your profile leads directly to account recovery.",
+        "Server revocation, pack permissions and gameplay rules remain enforced."
+      ]
+    },
     {
       "version": "0.9.217",
       "date": "2026-10-24",
