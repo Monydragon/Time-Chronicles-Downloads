@@ -1,23 +1,23 @@
 {
-  "version": "0.9.219",
-  "notes": "Time Chronicles 0.9.219 desktop update.",
-  "pub_date": "2026-10-28T23:14:00.000Z",
+  "version": "0.9.220",
+  "notes": "Time Chronicles 0.9.220 desktop update.",
+  "pub_date": "2026-10-30T10:39:27.000Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.219/Time.Chronicles_0.9.219_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUSTlwdDYyRm9vMXY0K2psYnZjTmxlNHdKeDJLK05pT1RnQWMrSk9paEJENDJRa0RlNlBLbzZObkpmN1ZnZkdkZ2h2NElVVGNKQml3azRvbTQySHFlTlBvSTBOdmZ5RHdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjMwMjI4CWZpbGU6VGltZSBDaHJvbmljbGVzXzAuOS4yMTlfeDY0LXNldHVwLmV4ZQpFK0ZKRVpoOUJMN0NaNjZxQ2pVZ0pVdW15NlVIZ3NaYy9YOHhXNGtQdklGWm05UmNiWEJ4V2R5bm9UdlZieTIvWHlzdWVKTUhka1NFMFBOb0FRREtDQT09Cg=="
+      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.220/Time.Chronicles_0.9.220_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUSTlwdDYyRm9vMXZidVpsMzF0ZWdURkg4cE5PbEwxQmRvd2NXY0dwVWVybFBVU1pOVzh2R2svSGF0TU1pMzNkOGJUdWs0NFlpVGhKdndaeHRMTWVDREJNL0FYMytpOFFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzU3OTAxCWZpbGU6VGltZSBDaHJvbmljbGVzXzAuOS4yMjBfeDY0LXNldHVwLmV4ZQpIb0NRMm5VSGVJbmRzanJJaDlWL1ljczFsb0RpVU4xRjFNVmRnV2x0V0Jka1BMOG5JS2ZlQWZ6QVNaZmlaTjRUcFljQStObElpMnF3dk9ySldlajVDZz09Cg=="
     },
     "linux-x86_64": {
-      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.219/Time.Chronicles_0.9.219_amd64.AppImage",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUSTlwdDYyRm9vMWgrOU1MaWt3bE1aNHdIeW84NnJydHZoUXdoQ3o4Qm1TUElVamhBb2gxT2J1L3h5aDZPMXQyeUlvSytsV0t2RXpZczVtSEE1azBkdXBBU2N4eVZUTHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjMwMjU3CWZpbGU6VGltZSBDaHJvbmljbGVzXzAuOS4yMTlfYW1kNjQuQXBwSW1hZ2UKeDZTd3h1a1A0aERjM1d5SzFNRlBDUlNoZWw2Y01JMmRMNHJOYkRmS0p0RHB0MzBnNUhPU3lZOTlZaWxWOEZ2SEk1OGVCbnhGVVBxQ1VyTzk1bno5QXc9PQo="
+      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.220/Time.Chronicles_0.9.220_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUSTlwdDYyRm9vMXJlTHFrUkJZWGppbzV2Y2JDUUlraFVuY0VMRzN1L0Izd0V4Uk0xUndtakhxN0F6Wk9sYzB3VVJYZG90NGVMNUtGTWdnb1dGaTNpSFRpRU9na0o5T1EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzU4Mjg4CWZpbGU6VGltZSBDaHJvbmljbGVzXzAuOS4yMjBfYW1kNjQuQXBwSW1hZ2UKcjVvekVtQStJVDFBV3NESWtSZmtyMENzdG9MbmdpRlgzbTh6Y21tQmxNSkx5RHUwYjV5aEwrOVlycjZmWWR4L3hESERRQktyYmlrTTkxMDYwM0xzQUE9PQo="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.219/Time.Chronicles.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUSTlwdDYyRm9vMWtNd21MTnZyWkxKWGN1dS95T0FYV2VlNlZRcnFmWE0vOU1MN0drNkVEOTJXSDVlMjE4VnlKSFlwc1g4SEtERm5UTi9jeDMrbVYzeGJxdkVwdnhTV3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjI5Nzk0CWZpbGU6VGltZSBDaHJvbmljbGVzLmFwcC50YXIuZ3oKOEM4MWFNK2Vsbk1qbE5HdG5jUFlPYlcxaEU2YzA0eFVSekhnYTJIK2hJQ0pyZ0pBTVEybEFwUXBXWlN6dmVqdFRGWng2RlBsL3hrR2RZcldsUmJxQnc9PQo="
+      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.220/Time.Chronicles.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUSTlwdDYyRm9vMWdVZGxpVFluNFdPdGFXMTdxcUV0MmpLb0RRMksxd2hvb1VIajBHZjRUWWp4UHJXZVkyc1QvRWFJUHozN3JjUjdmQ3RkbXBzSHpSY2NzdWVzWHhtV0FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzU3NTEzCWZpbGU6VGltZSBDaHJvbmljbGVzLmFwcC50YXIuZ3oKa0VBdmFFVkQ5V2xPVGE4ME1EZXJROVZEVDNFMTNKRTNvdmNCSC9OOWxkcno3ZWpjVFZhMG9lMkdwMnR3aUh3MFozVkFsd0pVc3JGRnJJdXk0SnpsRHc9PQo="
     },
     "darwin-aarch64": {
-      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.219/Time.Chronicles.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUSTlwdDYyRm9vMWtNd21MTnZyWkxKWGN1dS95T0FYV2VlNlZRcnFmWE0vOU1MN0drNkVEOTJXSDVlMjE4VnlKSFlwc1g4SEtERm5UTi9jeDMrbVYzeGJxdkVwdnhTV3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjI5Nzk0CWZpbGU6VGltZSBDaHJvbmljbGVzLmFwcC50YXIuZ3oKOEM4MWFNK2Vsbk1qbE5HdG5jUFlPYlcxaEU2YzA0eFVSekhnYTJIK2hJQ0pyZ0pBTVEybEFwUXBXWlN6dmVqdFRGWng2RlBsL3hrR2RZcldsUmJxQnc9PQo="
+      "url": "https://github.com/Monydragon/Time-Chronicles-Downloads/releases/download/v0.9.220/Time.Chronicles.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUSTlwdDYyRm9vMWdVZGxpVFluNFdPdGFXMTdxcUV0MmpLb0RRMksxd2hvb1VIajBHZjRUWWp4UHJXZVkyc1QvRWFJUHozN3JjUjdmQ3RkbXBzSHpSY2NzdWVzWHhtV0FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzU3NTEzCWZpbGU6VGltZSBDaHJvbmljbGVzLmFwcC50YXIuZ3oKa0VBdmFFVkQ5V2xPVGE4ME1EZXJROVZEVDNFMTNKRTNvdmNCSC9OOWxkcno3ZWpjVFZhMG9lMkdwMnR3aUh3MFozVkFsd0pVc3JGRnJJdXk0SnpsRHc9PQo="
     }
   }
 }

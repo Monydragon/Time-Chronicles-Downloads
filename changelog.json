@@ -1,6 +1,18 @@
 {
-  "currentVersion": "0.9.219",
+  "currentVersion": "0.9.220",
   "releases": [
+    {
+      "version": "0.9.220",
+      "date": "2026-10-30",
+      "title": "Seasonal appearance and artwork credits",
+      "summary": "Choose a seasonal appearance and explore artwork credits.",
+      "details": [
+        "The Halloween appearance follows the local date and a suggested region, with manual and off options and reduced motion support.",
+        "Artwork credits are available in Settings and the Modern home menu. The visual rights audit is continuing.",
+        "Previously generated decorative images have been replaced, and Newton portrait crops have been improved.",
+        "The Halloween card pack, timed challenge and badge are planned for a later update."
+      ]
+    },
     {
       "version": "0.9.219",
       "date": "2026-10-28",
